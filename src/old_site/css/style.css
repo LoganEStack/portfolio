@@ -1,0 +1,106 @@
+html,body {
+  height: 100%;
+  color:#000;
+}
+@font-face {
+  font-family: "Handwriting";
+  src: url("./fonts/Handwriting.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Handwriting.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Handwriting.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Handwriting.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Handwriting.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Handwriting.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Bradley;
+  src: url("./fonts/bradhitc.ttf");
+}
+.headshot {
+  position: relative;
+  width: 250px;
+  z-index: 3;
+  border: 15px solid currentColor;
+  border-radius: 100%;
+}
+.headshot-backdrop-wrapper{
+  position: relative;
+  display: inline-block;
+}
+.headshot-backdrop-wrapper::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border: 15px solid #262626;
+  border-radius: 100%;
+  content: '';
+}
+a {
+  color: #000; 
+}
+.myButton {
+  color: #e8e5e5;
+}
+.myButton:visited {
+  text-decoration: none;
+  color: #e8e5e5;
+}
+.myButton:hover {
+  text-decoration: underline;
+  color: #e8e5e5;
+}
+.myButton:active {
+  text-decoration: underline;
+  color: #e8e5e5;
+}
+.card-title {
+  padding-bottom: 1rem;
+}
+.card-body {
+  padding: 2rem 2rem 0 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .home, .resume {
+    position: unset;
+      overflow: hidden;
+      width: 100vw;
+  }
+  .home{
+    height: auto;
+  }
+}
+
+/* HOME */
+.home {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px 15px;
+  height: 100%;
+  text-align: center;
+  color: #e8e5e5;
+  background-color: #2c5ccc;
+}
+/* INTRO */
+.intro {
+  font-family: Bradley, sans-serif;
+  font-weight:bold;
+  margin: 0px;
+  height: 100vh;
+  padding: 0% 10% 0% 10%;
+}
+/* RESUME */
+.resume {
+  position: absolute;
+  display: block;
+  /* height: 100%; */
+  width: 50vw;
+  right: 0;
+  background-color: #fafafa;
+}
