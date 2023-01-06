@@ -9,6 +9,12 @@
 }
 #body {
   justify-content: center;
+  max-width: 2200px;
+}
+@media screen and (max-width:992px) {
+  #body {
+    background-color:red;
+  }
 }
 .background {
   display: flex;
@@ -65,32 +71,20 @@
   font-family: Hello_Galleria, Georgia, serif;
   font-weight: bold;
   display:inline-block;
+  transition: all .2s linear;
 }
 .route_selected {
   font-size: 140px;
   cursor: pointer;
+  display:inline-block;
   font-family: Hello_Galleria, Georgia, serif;
   font-weight: bold;
-  -webkit-transform: skewX(-15deg);
+  transform: skew(-15deg);
 }
 .route:hover {
-  -webkit-animation: slowskew .2s forwards alternate;
-  -moz-animation: slowskew .2s forwards alternate;
-    -o-animation: slowskew .2s forwards alternate;
-       animation: slowskew .2s forwards alternate;
+  transform: skew(-15deg);
 }
-@-webkit-keyframes slowskew {
-  to { -webkit-transform: skewX(-15deg); }
-}
-@-moz-keyframes slowskew {
-  to { -moz-transform: skewX(-15deg); }
-}
-@-o-keyframes slowskew {
-  to { -o-transform: skewX(-15deg); }
-}
-@keyframes slowskew {
-  to { transform: skewX(-15deg); }
-}
+
 .info {
   text-align: left;
   padding: 0px 50px;
