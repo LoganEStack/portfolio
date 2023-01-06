@@ -1,9 +1,6 @@
 Problems:
 Routes extend screen and add scroll bar when hovered over due to width:100%
 Routes divs are too wide, so hovering over non-text still italicizes
-Icons in about section are blue when hovered over
-Links in work section are blue. setting <a> tag css does not work. Only classes work for some reason.
-Grab a resume doesn't work when resume is passed as a parameter into a component.
-Can't get routes to stay italicized when selected.
+        How do I reduce the blue box?
+Blue links
 Animating the justify to right
-How do I shrink the blue box?

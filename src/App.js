@@ -1,4 +1,3 @@
-import './App.css';
 import { useState, useEffect } from 'react';
 import Name from './components/Name';
 import About from './components/routes/About';
@@ -6,7 +5,6 @@ import Work from './components/routes/Work';
 import Projects from './components/routes/Projects';
 import Art from './components/routes/Art';
 import Info from './components/Info';
-import resume from "./assets/Logan Stack Resume.pdf"
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -41,7 +39,7 @@ function App() {
       <Container fluid className="background">
         <Row id="header">
           <Col>
-            <Name resume={resume}></Name>
+            <Name></Name>
           </Col>
         </Row>
         <Row id="body" className="align-items-center">

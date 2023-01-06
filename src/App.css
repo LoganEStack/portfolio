@@ -7,6 +7,9 @@
   font-size: 22px;
   color: #313131;
 }
+#body {
+  justify-content: center;
+}
 .background {
   display: flex;
   text-align: center;
@@ -14,10 +17,10 @@
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .name {
-  margin-bottom:4em;
+  margin:4em 0em;
   position:relative;
 }
 .name_outline {
@@ -57,11 +60,11 @@
   /* width: 0; */
 }
 .route {
-  width:100%;
   font-size: 140px;
   cursor: pointer;
   font-family: Hello_Galleria, Georgia, serif;
   font-weight: bold;
+  display:inline-block;
 }
 .route_selected {
   font-size: 140px;
@@ -90,7 +93,7 @@
 }
 .info {
   text-align: left;
-  padding: 50px;
+  padding: 0px 50px;
   margin-right:80px;
   font-size: 36px;
   /* font-size: 2vw; */
@@ -114,6 +117,10 @@
 .role {
   margin-bottom: 0;
 }
+.role_description {
+  font-size: 20px;
+  margin-bottom: 0;
+}
 .font_awesome_icons {
   margin: 0px 10px 0px 10px;
   color: #313131;
@@ -124,10 +131,20 @@
   right: 0;
   margin-right:1px;
 }
-a {
-  color:red;
+
+/* a:visited {
+  color: #313131;
+}
+a:link:hover {
+  color: #707070;
+}
+a:link:visited:hover {
+  color: #707070;
+} */
+a{
+  color: #313131;
   text-decoration: none;
 }
-a:hover {
-  color: #b6b6b6;
+a:hover { 
+  color: gray; 
 }

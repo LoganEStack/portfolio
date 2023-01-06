@@ -32,17 +32,21 @@ function Info({activeTab}) {
         return (
           <div className="info">
             <div style={{"paddingBottom": "1.2em"}}>
-              <p className="route_header"><a href="https://www.gm.com/">General Motors</a></p>
+              <p className="route_header"><a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">General Motors</a></p>
               <p className="role">Software Engineer <span style={{"color":"grey"}}>(2022-Present)</span></p>
+              <p className="role_description">I write software to analyze image quality for the cameras on GM's autonomous vehicles.</p>
               <p className="role">DevOps Engineer <span style={{"color":"grey"}}>(2019-2022)</span></p>
+              <p className="role_description">I worked on the automation of build and testing software for the code residing in 60 individual Electronic Control Units for the Vehicles and Embedded Controls division.</p>
             </div>
             <div style={{"paddingBottom": "1.2em"}}>
-              <p className="route_header"><a href="https://www.michelin.com/en/">Michelin</a></p>
+              <p className="route_header"><a href="https://www.michelin.com/en/" target="_blank" rel="noopener noreferrer">Michelin</a></p>
               <p className="role">Software Engineer Intern <span style={{"color":"grey"}}>(2018)</span></p>
+              <p className="role_description">I spent my time on the Dev Ops Team writing applications to support other sub-departments within IT.</p>
             </div>
             <div style={{"paddingBottom": "1.2em"}}>
-              <p className="route_header"><a href="https://www.ieee.org/">IEEE</a></p>
+              <p className="route_header"><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE</a></p>
               <p className="role">Software Engineer Intern <span style={{"color":"grey"}}>(2017)</span></p>
+              <p className="role_description">I built and maintained an internal IT Portal for department-wide use using WordPress.</p>
             </div>
           </div>
         );
@@ -50,15 +54,16 @@ function Info({activeTab}) {
         return (
           <div className="info">
             <div style={{"paddingBottom": "1.2em"}}>
-              <p className="route_header">Project 1</p>
+              <p className="route_header"><a href="" target="_blank" rel="noopener noreferrer">illustrate_me</a></p>
+              <p>A program that adds AI generated illustrations to books by using topic 
+                modeling to determine the central theme of each page.</p>
+            </div>
+            <div style={{"paddingBottom": "1.2em"}}>
+              <p className="route_header"><a href="" target="_blank" rel="noopener noreferrer">Project 2</a></p>
               <p>Project description goes here.</p>
             </div>
             <div style={{"paddingBottom": "1.2em"}}>
-              <p className="route_header">Project 2</p>
-              <p>Project description goes here.</p>
-            </div>
-            <div style={{"paddingBottom": "1.2em"}}>
-              <p className="route_header">Project 3</p>
+              <p className="route_header"><a href="" target="_blank" rel="noopener noreferrer">Project 3</a></p>
               <p>Project description goes here.</p>
             </div>
           </div>

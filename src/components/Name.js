@@ -1,8 +1,9 @@
 import Button from 'react-bootstrap/Button';
+import resume from "../assets/Logan Stack Resume.pdf"
 
-function Name(resume) {
+function Name() {
   return (
-    <div className="name">
+    <div className="name" style={{"padding":"5px 10px 15px 10px"}}>
       <div className="name_outline"/>
       <div className="name_outline"/>
       <div className="name_outline"/>
