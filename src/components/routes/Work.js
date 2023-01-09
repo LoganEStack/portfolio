@@ -1,11 +1,13 @@
 function Work({toggleInfoDisplay, activeTab}) {
-  let route = "route"
   if (activeTab === "Work") {
-    route = "route_selected"
+    return (
+      <div className="route skew" onClick={() => toggleInfoDisplay("Work")}>WORK</div>
+    );
+  } else {
+    return (
+      <div className="route" onClick={() => toggleInfoDisplay("Work")}>WORK</div>
+    );
   }
-  return (
-    <div className={route} onClick={() => toggleInfoDisplay("Work")}>WORK</div>
-  );
 }
 
 export default Work;

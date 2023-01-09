@@ -1,6 +1,0 @@
-Problems:
-Routes extend screen and add scroll bar when hovered over due to width:100%
-Routes divs are too wide, so hovering over non-text still italicizes
-        How do I reduce the blue box?
-Blue links
-Animating the justify to right
