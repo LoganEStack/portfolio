@@ -12,7 +12,7 @@ function Info({activeTab}) {
             <p>
               My name's Logan and I'm a software engineer based in Detroit, MI with a passion for creativity.
               I'm currently employed at General Motors, where I write software to test the cameras 
-              that go into our Autonomous Vehicles. You can read about my past work experience below 
+              that go into our autonomous vehicles. You can read about my past work experience below 
               and can also checkout my Github for links to personal projects.
             </p>
             <div>
