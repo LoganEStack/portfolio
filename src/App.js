@@ -72,7 +72,7 @@ function App() {
           </Col>
 
           { activeTab !== "" &&
-            <Col className="d-none d-lg-block" style={{"marginRight": "80px"}}>
+            <Col className="d-none d-lg-block">
               <Info activeTab={activeTab}></Info>
             </Col>
           }
