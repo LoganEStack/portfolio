@@ -2,6 +2,10 @@
   font-family: Hello_Galleria;
   src: url("./assets/fonts/Hello_Galleria.ttf");
 }
+@font-face {
+  font-family: Eugusto;
+  src: url("./assets/fonts/Eugusto.otf");
+}
 #app {
   font-family: "Calibri", sans-serif;
   font-size: 100%;
@@ -70,8 +74,8 @@ a:hover {
 .route {
   font-size: clamp(6em, 8vw, 9em);
   cursor: pointer;
-  font-family: Hello_Galleria, Georgia, serif;
-  font-weight: bold;
+  font-family: Eugusto, Georgia, serif;
+  /* font-weight: bold; */
   display:inline-block;
   transition: all .2s linear;
 }
