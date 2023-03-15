@@ -17,13 +17,13 @@ function Info({activeTab}) {
             </p>
             <div>
               <a className="font_awesome_icons" href="mailto:loganestack@gmail.com" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faEnvelope} style={{"fontSize":"1.3em"}} />
               </a>
               <a className="font_awesome_icons" href="https://www.linkedin.com/in/logan-stack/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} style={{"fontSize":"1.3em"}} />
               </a>
               <a className="font_awesome_icons" href="https://github.com/LoganEStack" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} style={{"fontSize":"1.3em"}} />
               </a>            
             </div>
           </div>

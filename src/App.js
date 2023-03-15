@@ -40,13 +40,13 @@ function App() {
 
   return (
     <div id="app">
-      <Container fluid className="background">
+      <Container fluid className={width >= 992 ? "background" : "background_mobile"}>
         <Row id="header">
           <Col>
             <Name></Name>
           </Col>
         </Row>
-        <Row id="body" className="align-items-center">
+        <Row id="body">
           <Col>
             <Row id="routes" className={routesStyle}>
               <Col xs={"auto"} lg={12}>
@@ -78,9 +78,6 @@ function App() {
           }
         </Row>
       </Container>
-      {/* <div className='old_site'>        
-        <Button size="sm" variant="outline-dark" className="rounded-0">Go to old site</Button>
-      </div> */}
     </div>
   );
 }
