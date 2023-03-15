@@ -22,7 +22,7 @@ function App() {
     if (width < 992 && isInfoDisplayed === false) {
       setActiveTab("About")
     }
-  }, [width]);
+  }, [width, isInfoDisplayed]);
 
   const toggleInfoDisplay = (route) => {
     if (route === activeTab) {
