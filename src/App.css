@@ -8,7 +8,7 @@
 }
 #app {
   font-family: "Calibri", sans-serif;
-  font-size: clamp(.7em, .5vw + .5vh, 1em);
+  font-size: 1em;
   color: #222222;
 }
 #body {
@@ -43,6 +43,7 @@ a:hover {
   min-height: 100vh;
 }
 .name {
+  font-size: clamp(.8em, .3vw + .7vh, 1em);
   margin:4em auto;
   position:relative;
 }
@@ -82,7 +83,7 @@ a:hover {
   padding: 0 10px;
 }
 .route {
-  font-size: clamp(6em, 4vw + 4vh, 8em);
+  font-size: clamp(6em, 3vw + 5vh, 8em);
   cursor: pointer;
   font-family: Eugusto, Georgia, serif;
   /* font-weight: bold; */
