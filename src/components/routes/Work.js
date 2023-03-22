@@ -1,7 +1,7 @@
 function Work({toggleInfoDisplay, activeTab}) {
   if (activeTab === "Work") {
     return (
-      <div className="route skew" onClick={() => toggleInfoDisplay("Work")}>WORK</div>
+      <div className="route skew underline" onClick={() => toggleInfoDisplay("Work")}>WORK</div>
     );
   } else {
     return (
