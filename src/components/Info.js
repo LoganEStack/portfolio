@@ -54,7 +54,7 @@ function Info({activeTab}) {
         return (
           <div className="info">
             <div style={{"paddingBottom": "1.2em"}}>
-              <p className="info_header"><a href="https://github.com/LoganEStack/illustrate_me" target="_blank" rel="noopener noreferrer">illustrate_me</a></p>
+              <p className="info_header"><a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">picture_book</a></p>
               <p className="role_description">A program that adds AI generated illustrations to books by using topic 
                 modeling to determine the central theme of each page.</p>
             </div>

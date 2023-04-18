@@ -22,10 +22,14 @@ function App() {
     if (width < 992 && isInfoDisplayed === false) {
       setActiveTab("About")
     }
-  }, [width, isInfoDisplayed]);
+    if (width >= 992 && activeTab !== "") {
+      setRoutesStyle("routes_justified");
+    }
+  }, [width, isInfoDisplayed, activeTab]);
 
   const toggleInfoDisplay = (route) => {
     if (route === activeTab) {
+      // if not on mobile, close tab
       if (width >= 992) {
         setActiveTab("");
         setIsInfoDisplayed(false);
