@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.1b375936.css",
-    "main.js": "./static/js/main.d2fab61b.js",
+    "main.css": "./static/css/main.af2fca12.css",
+    "main.js": "./static/js/main.08225728.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
-    "static/media/Logan Stack Resume.pdf": "./static/media/Logan Stack Resume.c1fa43888ada22f918fa.pdf",
+    "static/media/Logan_Stack_Resume.pdf": "./static/media/Logan_Stack_Resume.7923620330d44c206421.pdf",
     "static/media/Hello_Galleria.ttf": "./static/media/Hello_Galleria.cd878a664ab4a5994827.ttf",
     "static/media/Eugusto.otf": "./static/media/Eugusto.77791e2145b000caceb4.otf",
     "index.html": "./index.html",
-    "main.1b375936.css.map": "./static/css/main.1b375936.css.map",
-    "main.d2fab61b.js.map": "./static/js/main.d2fab61b.js.map",
+    "main.af2fca12.css.map": "./static/css/main.af2fca12.css.map",
+    "main.08225728.js.map": "./static/js/main.08225728.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b375936.css",
-    "static/js/main.d2fab61b.js"
+    "static/css/main.af2fca12.css",
+    "static/js/main.08225728.js"
   ]
 }
