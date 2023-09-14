@@ -44,7 +44,7 @@ a:hover {
 }
 .name {
   font-size: clamp(.8em, .3vw + .7vh, 1em);
-  margin:4em auto;
+  margin: 4em auto;
   position:relative;
 }
 .name_outline {
@@ -83,7 +83,7 @@ a:hover {
   padding: 0 10px;
 }
 .route {
-  font-size: clamp(6em, 3vw + 5vh, 8em);
+  font-size: clamp(4em, 3vw + 5vh, 7.5em);
   cursor: pointer;
   font-family: Eugusto, Georgia, serif;
   /* font-weight: bold; */
@@ -96,12 +96,21 @@ a:hover {
 .route:hover {
   transform: skew(-15deg);
 }
-@media screen and (max-width: 992px) {
+.info {
+  animation: .2s ease-out 0s 1 slideInFromLeft;
+  text-align: left;
+  padding: 0px 30px;
+  font-size: clamp(1em, 1vw + 1vh, 2em);
+}
+@media screen and (max-width: 991px) {
   .route {
     font-size: 4.5vw;
   }
   .underline {
     text-decoration: underline;
+  }
+  .info {
+    padding: 0px 0px;
   }
 }
 @keyframes slideInFromLeft {
@@ -112,12 +121,7 @@ a:hover {
     transform: translateX(0);
   }
 }
-.info {
-  animation: .2s ease-out 0s 1 slideInFromLeft;
-  text-align: left;
-  padding: 0px 30px;
-  font-size: clamp(1em, 1vw + 1vh, 2em);
-}
+
 /* @media screen and (min-width: 320px) {
   .info {
     font-size: 24px;

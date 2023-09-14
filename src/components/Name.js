@@ -1,5 +1,5 @@
 import Button from 'react-bootstrap/Button';
-import resume from "../assets/Logan Stack Resume.pdf"
+import resume from "../assets/Logan_Stack_Resume.pdf"
 
 function Name() {
   return (
