@@ -72,9 +72,9 @@ function Info({activeTab}) {
         return (
           <div className="info">
             <p className="info_header">See some of my art.</p>
-            <p className="info_description">
-              <p style={{"marginBottom": "0em"}}>Drawing and painting are hobbies of mine.</p>
-              <p>See some of the stuff I've done by clicking bellow.</p>
+            <p style={{"marginBottom": "1rem"}} className="info_description">
+              Drawing and painting are hobbies of mine.
+              See some of the stuff I've done by clicking bellow.
             </p>
             <a href="https://drive.google.com/drive/folders/1qQzT3iMG80d-Zth5t1t94XKaxtcF7PGD?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button variant="outline-dark" className="rounded-0">See some stuff</Button>

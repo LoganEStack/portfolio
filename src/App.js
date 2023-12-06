@@ -43,46 +43,44 @@ function App() {
   }
 
   return (
-    <div id="app">
-      <Container fluid className={width >= 992 ? "background" : "background_mobile"}>
-        <Row id="header">
-          <Col>
-            <Name></Name>
-          </Col>
-        </Row>
-        <Row id="body">
-          <Col>
-            <Row id="routes" className={routesStyle}>
-              <Col xs={"auto"} lg={12}>
-                <About toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></About>
-              </Col>
-              <Col xs={"auto"} lg={12}>
-                <Work toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></Work>
-              </Col>
-              <Col xs={"auto"} lg={12}>
-                <Projects toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></Projects>
-              </Col>
-              <Col xs={"auto"} lg={12}>
-                <Art toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></Art>
+    <Container fluid className="background">
+      <Row id="site_header">
+        <Col>
+          <Name></Name>
+        </Col>
+      </Row>
+      <Row id="site_body">
+        <Col>
+          <Row id="routes" className={routesStyle}>
+            <Col xs={"auto"} lg={12}>
+              <About toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></About>
+            </Col>
+            <Col xs={"auto"} lg={12}>
+              <Work toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></Work>
+            </Col>
+            <Col xs={"auto"} lg={12}>
+              <Projects toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></Projects>
+            </Col>
+            <Col xs={"auto"} lg={12}>
+              <Art toggleInfoDisplay={toggleInfoDisplay} activeTab={activeTab}></Art>
+            </Col>
+          </Row>
+          { activeTab !== "" &&
+            <Row className="d-lg-none" style={{"marginTop": "40px"}}>
+              <Col>
+                <Info activeTab={activeTab}></Info>
               </Col>
             </Row>
-            { activeTab !== "" &&
-              <Row className="d-lg-none" style={{"marginTop": "40px"}}>
-                <Col>
-                  <Info activeTab={activeTab}></Info>
-                </Col>
-              </Row>
-            }
-          </Col>
-
-          { activeTab !== "" &&
-            <Col className="d-none d-lg-block">
-              <Info activeTab={activeTab}></Info>
-            </Col>
           }
-        </Row>
-      </Container>
-    </div>
+        </Col>
+
+        { activeTab !== "" &&
+          <Col className="d-none d-lg-block">
+            <Info activeTab={activeTab}></Info>
+          </Col>
+        }
+      </Row>
+    </Container>
   );
 }
 
