@@ -8,7 +8,6 @@
 }
 #app {
   font-family: "Calibri", sans-serif;
-  font-size: 1em;
   color: #222222;
 }
 #body {
@@ -17,7 +16,7 @@
   max-width: 2200px;
   width: 90%;
 }
-a{
+a {
   color: #222222;
   text-decoration: none;
 }
@@ -43,9 +42,16 @@ a:hover {
   min-height: 100vh;
 }
 .name {
-  font-size: clamp(.8em, .3vw + .7vh, 1em);
   margin: 4em auto;
+  padding: .5rem 1rem;
   position:relative;
+}
+.name_header {
+  font-size: 2em;
+  font-weight: bold;
+}
+.name_subheader {
+  font-size: 1.4em;
 }
 .name_outline {
   position:absolute;
@@ -86,7 +92,6 @@ a:hover {
   font-size: clamp(4em, 3vw + 5vh, 7.5em);
   cursor: pointer;
   font-family: Eugusto, Georgia, serif;
-  /* font-weight: bold; */
   display:inline-block;
   transition: all .2s linear;
 }
@@ -100,11 +105,10 @@ a:hover {
   animation: .2s ease-out 0s 1 slideInFromLeft;
   text-align: left;
   padding: 0px 30px;
-  font-size: clamp(1em, 1vw + 1vh, 2em);
 }
 @media screen and (max-width: 991px) {
   .route {
-    font-size: 4.5vw;
+    font-size: 4em;
   }
   .underline {
     text-decoration: underline;
@@ -132,22 +136,26 @@ a:hover {
     font-size: 36px;
   }
 } */
+.info_section {
+  padding-bottom: 1.2em;
+}
 .info_header {
-  font-size: clamp(2em, 1vw + 1vh, 5em);
+  font-size: 4em;
   font-weight:bold;
   margin-bottom: 0;
   line-height: 1em;
 }
-.role {
+.info_description {
+  font-size: 2em;
   margin-bottom: 0;
-  font-size: clamp(20px, 1vw + 1vh, 3em);
 }
-.role_description {
-  font-size: clamp(16px, 1vw, 20px);
+.info_subdescription {
+  font-size: 1.4em;
   margin-bottom: 0;
   color: #606060;
 }
 .font_awesome_icons {
+  font-size: 2.6em;
   margin: 0px 10px 0px 10px;
   color: #222222;
 }
