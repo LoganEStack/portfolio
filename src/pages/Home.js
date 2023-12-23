@@ -37,7 +37,6 @@ const Home = () => {
       <div className='home_container_right'>
         <div className="hand">
           <img src={hand} alt="Waving Hand"></img>
-          {/* <img src={car} alt="Car drawing" /> */}
         </div>
       </div>
     </div>
