@@ -11,7 +11,10 @@ const Projects = () => {
         <div className="info_section">
           <p className="info_header">Projects</p>
           <p className="info_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            Here's a couple of projects that I've worked on in my free time. I've tried to tackle a number 
+            of projects utilizing different technologies in unique personal areas of interest. I've learned
+            lots about the technologies involved in ___
+            Clicking on the names of these projects will bring you to their respective Github pages.
           </p>
         </div>
       </div>
@@ -28,19 +31,19 @@ const Projects = () => {
 
         <div className='project'>
           <p className="project_header">
-            <a href="https://github.com/LoganEStack/FakeFactsBot" target="_blank" rel="noopener noreferrer">Twitter Bot</a>
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Something else</a>
           </p>
           <p className="project_description">
-            twitter bot that tweets comments from reddit.com threads every hour using twitter and reddit API
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           </p>
         </div>
 
         <div className='project'>
           <p className="project_header">
-            <a href="" target="_blank" rel="noopener noreferrer">Example</a>
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Example</a>
           </p>
           <p className="project_description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           </p>
         </div>
       </div>

@@ -49,7 +49,7 @@ const Art = () => {
 
       <div className="art_container_right">
         <div className='artwork_scroll_box'>
-          {/* <div class="scrollbar" id="scrollbar1"> */}
+          <div class="scrollbar" id="scrollbar1">
             <div className='artwork'>
               <img src={bill_murray} alt="Bill Murray art" onClick={() => openPopup(bill_murray)} />
             </div>
@@ -125,12 +125,12 @@ const Art = () => {
             {popupImage && (
               <div className="popup-overlay" onClick={closePopup}>
                 <div className="popup-content">
-                  <img src={popupImage} alt="Popup Image" />
+                  <img src={popupImage} alt="Popup" />
                 </div>
               </div>
             )}
 
-          {/* </div> */}
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import './App.css';
+import './assets/css/art.css';
+import './assets/css/home.css';
+import './assets/css/images.css';
+import './assets/css/info.css';
+import './assets/css/navigation.css';
+import './assets/css/projects.css';
+import './assets/css/work.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
