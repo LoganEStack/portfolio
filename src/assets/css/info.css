@@ -4,12 +4,12 @@
 
 .info_header {
     margin: 0;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     font-size: 10rem;
     font-weight: bold;
 }
 
 .info_description {
     width: 60ch;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }

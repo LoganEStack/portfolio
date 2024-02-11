@@ -1,6 +1,6 @@
 .image_hand, .image_car, .image_books, .image_palette, .question_mark {
     display: block;
-    height: 700px;
+    height: 650px;
     width: auto;
     margin: auto;
     user-drag: none;
