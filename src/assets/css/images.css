@@ -12,5 +12,6 @@
 }
 
 .image_hand {
+    height: 800px;
     transform: rotate(15deg);
 }

@@ -19,7 +19,7 @@
     }
 }
 
-.image_hand img:hover {
+.image_hand:hover {
     animation: rotateImage .2s infinite alternate;
 }
 

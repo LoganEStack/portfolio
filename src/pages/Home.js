@@ -13,7 +13,7 @@ const Home = () => {
     <Container fluid className="vh-100 d-flex flex-column ">
       <Row className="h-100">
         <Col style={{ "margin": "auto" }}>
-          <div className="info_section home">
+          <Row className="info_section home">
             <p className="info_header">Hi, I'm Logan</p>
             <p className="info_description">
               My name's Logan and I'm a software engineer based in Detroit, MI with a passion for creativity.
@@ -36,7 +36,7 @@ const Home = () => {
                 <Button variant="outline-dark" className="rounded-0">Grab a resume</Button>
               </a> */}
             </div>
-          </div>
+          </Row>
         </Col>
         <Col className='home_section'>
           <img className="image_hand" src={hand} alt="Waving Hand"></img>

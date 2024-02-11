@@ -3,8 +3,8 @@
 }
 
 .info_header {
-    margin: 0;
     padding-top: 1.5rem;
+    line-height: 150px;
     font-size: 10rem;
     font-weight: bold;
 }
@@ -12,4 +12,5 @@
 .info_description {
     width: 60ch;
     font-size: 1.3rem;
+    padding-left: .9vw;
 }
