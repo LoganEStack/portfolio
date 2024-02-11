@@ -1,59 +1,13 @@
-.home_container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    /* background-color: rgb(233, 206, 243); */
-}
-
-.home_container_left {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 50%;
-    height: 100%;
-    padding: 3vw;
-    justify-content: flex-end;
-    /* background-color: rgb(186, 240, 222); */
-}
-
-.home_container_right {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 50%;
-    align-content: center;
-    padding: 20px;
-    /* background-color: rgb(227, 238, 172); */
+.home_section {
+    margin: auto;
+    padding-left: 5vw;
 }
 
 .font_awesome_icons {
     padding: 0px 10px;
-    font-size: 2rem;
-    /* background-color: rgb(155, 202, 186); */
+    font-size: 2.2rem;
 }
 
-.image_hand {
-    width: 60%;
-    margin: auto;
-}
-
-.hand img {
-    display: block;
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-    margin: auto;
-    transform: rotate(15deg);
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
 
 @keyframes rotateImage {
     0% {
@@ -65,6 +19,12 @@
     }
 }
 
-.hand img:hover {
+.image_hand img:hover {
     animation: rotateImage .2s infinite alternate;
+}
+
+@media screen and (min-width: 992px) {
+    .home {
+        padding-top: 50%;
+    }
 }

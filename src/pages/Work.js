@@ -5,15 +5,11 @@ import car from '../assets/images/car.png';
 
 const Work = () => {
   return (
-    <Container fluid>
-      {/* <div className="work_container"> */}
-      <Row style={{"background-color":"#fae8e8"}}>
-        <Col style={{"background-color":"#dbcaca"}}>
-          {/* <div className="work_container_left"> */}
-          <Row style={{"background-color":"#b09b9b"}}>
-            <div className="image_car">
-              <img src={car} alt="Car drawing" />
-            </div>
+    <Container fluid className="vh-100 d-flex flex-column ">
+      <Row className="h-100">
+        <Col style={{ "margin": "auto" }}>
+          <Row>
+            <img className="image_car" src={car} alt="Car drawing" />
           </Row>
           <Row className="info_section">
             <p className="info_header">Work</p>
@@ -25,10 +21,8 @@ const Work = () => {
               I write software to analyze image quality for the cameras on GM's vehicles.
             </p>
           </Row>
-          {/* </div> */}
         </Col>
-        <Col style={{"background-color":"#d9baba"}}>
-          {/* <div className="work_container_right"> */}
+        <Col className="work_section">
           <p className="work_header"><a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">General Motors</a></p>
           <p className="work_description">Software Engineer <span style={{ "color": "grey" }}>(2022-Present)</span></p>
           <p className="work_description">DevOps Engineer <span style={{ "color": "grey" }}>(2019-2022)</span></p>
@@ -38,10 +32,9 @@ const Work = () => {
 
           <p className="work_header"><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE</a></p>
           <p className="work_description">Software Engineer Intern <span style={{ "color": "grey" }}>(2017)</span></p>
-          {/* </div> */}
         </Col>
       </Row>
-      {/* </div> */}
+      {/* if in mobile, picture then info. below info is grey text with arrow v beneath saying "view more" which autoscrolls you to the work section which takes up the whole of a second phone screen. */}
     </Container>
   )
 };

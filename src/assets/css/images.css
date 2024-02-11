@@ -1,8 +1,7 @@
-.question_mark img {
+.image_hand, .image_car, .image_books, .image_palette, .question_mark {
     display: block;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: 700px;
+    width: auto;
     margin: auto;
     user-drag: none;
     user-select: none;
@@ -10,4 +9,8 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.image_hand {
+    transform: rotate(15deg);
 }

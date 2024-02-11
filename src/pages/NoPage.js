@@ -12,9 +12,7 @@ const NoPage = () => {
         </div>
       </div>
       <div className='home_container_right'>
-        <div className="question_mark">
-          <img src={question_mark} alt="question mark art"></img>
-        </div>
+        <img className="question_mark" src={question_mark} alt="question mark art"></img>
       </div>
     </div>
   );

@@ -1,20 +1,15 @@
 .info_section {
-    /* height: 40%; */
-    padding-left: 5vw;
-    background-color: #a88585;
+    padding-left: 6vw;
 }
 
 .info_header {
-    /* margin: 0; */
-    font-size: 8rem;
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 10rem;
     font-weight: bold;
-    line-height: 120px;
-    /* background-color: rgb(205, 236, 226); */
 }
 
 .info_description {
     width: 60ch;
-    /* padding-top: 25px; */
-    font-size: 1.2rem;
-    /* background-color: rgb(171, 198, 188); */
+    font-size: 1.5rem;
 }
