@@ -1,5 +1,6 @@
 .info_section {
     padding-left: 6vw;
+    order: 0;
 }
 
 .info_header {
@@ -12,5 +13,25 @@
 .info_description {
     width: 60ch;
     font-size: 1.3rem;
-    padding-left: .9vw;
+    padding-left: 1vw;
+}
+
+@media screen and (max-width: 1145px) {
+    .info_section {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+    }
+
+    .info_header {
+        font-size: 7rem;
+        line-height: 110px;
+    }
+
+    .info_description {
+        width: 60ch;
+        font-size: 1.3rem;
+    }
 }

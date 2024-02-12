@@ -9,13 +9,45 @@ a:hover {
 
 nav {
     position: fixed;
-    width: 100%;
+    width: 60%;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1000;
+    background: #f4f1e8;
 }
 
 nav ul {
+    margin: 0;
+    padding-right: 3vw;
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+nav ul li {
+    padding: 1.5vw;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav_active {
+    color: #dac779;
+}
+
+@media screen and (max-width: 1145px) {
+    nav {
+        left: 0;
+        width: 100%;
+    }
+    nav ul {
+        justify-content: space-evenly;
+        padding:0;
+    }
+    nav ul li {
+        font-size: 2rem;
+    }
+}
+/* nav ul {
     margin: 0;
     padding-right: 3vw;
     list-style: none;
@@ -31,4 +63,4 @@ nav ul li {
 
 .nav_active {
     color: #dac779;
-}
+} */

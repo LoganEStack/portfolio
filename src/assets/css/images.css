@@ -1,4 +1,8 @@
-.image_hand, .image_car, .image_books, .image_palette, .question_mark {
+.image_hand,
+.image_car,
+.image_books,
+.image_palette,
+.question_mark {
     display: block;
     height: 650px;
     width: auto;
@@ -9,9 +13,31 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    margin-top: 8rem;
 }
 
 .image_hand {
     height: 800px;
     transform: rotate(15deg);
+    order:-1;
+}
+
+@media screen and (max-width: 1145px) {
+    .image_hand,
+    .image_car,
+    .image_books,
+    .image_palette,
+    .question_mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        width: 650px;
+        height: auto;
+    }
+    .image_hand {
+        width: 350px;
+        height: auto;
+        order: 1;
+    }
 }

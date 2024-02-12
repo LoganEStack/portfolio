@@ -11,30 +11,33 @@ const Work = () => {
           <Row>
             <img className="image_car" src={car} alt="Car drawing" />
           </Row>
-          <Row className="info_section">
-            <p className="info_header">Work</p>
-            <p className="info_description">
-              Over the course of my career I've had the pleasure of working for some industry-leading businesses.
-              My internships at Michelin and IEEE were a _____
-              I then started my first full-time position at General Motors where I helped found a Dev Ops team
-              responsible for managing all embedded vehicle code. Now, I work in Autonomous, where
-              I write software to analyze image quality for the cameras on GM's vehicles.
-            </p>
+          <Row>
+            <div className="info_section">
+              <p className="info_header">Work</p>
+              <p className="info_description">
+                Over the course of my career I've had the pleasure of working for some industry-leading businesses.
+                My internships at Michelin and IEEE were a _____
+                I then started my first full-time position at General Motors where I helped found a Dev Ops team
+                responsible for managing all embedded vehicle code. Now, I work in Autonomous, where
+                I write software to analyze image quality for the cameras on GM's vehicles.
+              </p>
+            </div>
           </Row>
         </Col>
-        <Col className="work_section">
-          <p className="work_header"><a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">General Motors</a></p>
-          <p className="work_description">Software Engineer <span style={{ "color": "grey" }}>(2022-Present)</span></p>
-          <p className="work_description">DevOps Engineer <span style={{ "color": "grey" }}>(2019-2022)</span></p>
+        <Col>
+          <div className="work_section">
+            <p className="work_header"><a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">General Motors</a></p>
+            <p className="work_description">Software Engineer <span style={{ "color": "grey" }}>(2022-Present)</span></p>
+            <p className="work_description">DevOps Engineer <span style={{ "color": "grey" }}>(2019-2022)</span></p>
 
-          <p className="work_header"><a href="https://www.michelin.com/en/" target="_blank" rel="noopener noreferrer">Michelin</a></p>
-          <p className="work_description">Software Engineer Intern <span style={{ "color": "grey" }}>(2018)</span></p>
+            <p className="work_header"><a href="https://www.michelin.com/en/" target="_blank" rel="noopener noreferrer">Michelin</a></p>
+            <p className="work_description">Software Engineer Intern <span style={{ "color": "grey" }}>(2018)</span></p>
 
-          <p className="work_header"><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE</a></p>
-          <p className="work_description">Software Engineer Intern <span style={{ "color": "grey" }}>(2017)</span></p>
+            <p className="work_header"><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE</a></p>
+            <p className="work_description">Software Engineer Intern <span style={{ "color": "grey" }}>(2017)</span></p>
+          </div>
         </Col>
       </Row>
-      {/* if in mobile, picture then info. below info is grey text with arrow v beneath saying "view more" which autoscrolls you to the work section which takes up the whole of a second phone screen. */}
     </Container>
   )
 };

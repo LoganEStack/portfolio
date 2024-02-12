@@ -1,99 +1,107 @@
 .art_section {
-  margin: auto;
-  padding-left: 5vw;
+    margin: auto;
+    padding-left: 2vw;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .artwork_scroll_box {
-  display: flex;
-  flex: 50%;
-  flex-wrap: wrap;
-  height: 800px;
-  width: 800px;
-  overflow: auto;
-  border: 4px solid #1f1f1f;
-  /* Border color */
-  border-radius: 10px;
-  /* Border radius for rounded corners */
-  box-sizing: border-box;
-  /* Include the border in the total width and height */
+    display: flex;
+    flex: 50%;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
+    overflow: auto;
+    border: 4px solid #1f1f1f;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .artwork {
-  flex: 50%;
-  padding: 33px;
-  min-height: min-content;
-  margin: auto;
-  text-align: center;
+    flex: 50%;
+    padding: 33px;
+    min-height: min-content;
+    margin: auto;
+    text-align: center;
 }
 
 .artwork img {
-  padding: 1rem;
-  width: 300px;
-  height: auto;
-  /* Maintain aspect ratio */
-  border: 4px solid #1f1f1f;
-  /* Border color */
-  border-radius: 10px;
-  /* Border radius for rounded corners */
-  box-sizing: border-box;
-  /* Include the border in the total width and height */
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+    border: 4px solid #1f1f1f;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .artwork img:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  background-color: #dac779;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    background-color: #dac779;
 }
 
 .popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  /* Semi-transparent black background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1001;
-  /* Set a higher z-index than your main content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
 }
 
 .popup-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 60%;
-  max-height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 .popup-content img {
-  width: 60vh;
-  height: auto;
-  border-radius: 10px;
-  /* Optional: Add rounded corners to the image */
+    width: 60vh;
+    height: auto;
+    border-radius: 10px;
 }
 
 .scrollbar {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
 
 #scrollbar1::-webkit-scrollbar {
-  width: 7px;
+    width: 7px;
 }
 
 #scrollbar1::-webkit-scrollbar-track {
-  border-radius: 8px;
-  background-color: #e7e7e7;
-  border: 1px solid #cacaca;
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
 }
 
 #scrollbar1::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #dac779;
+    border-radius: 10px;
+    background-color: #dac779;
+}
+
+@media screen and (max-width: 1145px) {
+    .art_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .artwork_scroll_box {
+        height: 60vh;
+        width: 60vw;
+    }
 }

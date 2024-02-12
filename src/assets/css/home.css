@@ -3,11 +3,14 @@
     padding-left: 5vw;
 }
 
-.font_awesome_icons {
-    padding: 0px 10px;
-    font-size: 2.2rem;
+.home {
+    padding-top: 50%;
 }
 
+.font_awesome_icons {
+    margin: 0px 10px;
+    font-size: 2.2rem;
+}
 
 @keyframes rotateImage {
     0% {
@@ -23,8 +26,12 @@
     animation: rotateImage .2s infinite alternate;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1145px) {
     .home {
-        padding-top: 50%;
+        padding-top: 0;
+    }
+    .font_awesome_icons {
+        justify-content: center;
+        width: 100%;
     }
 }
