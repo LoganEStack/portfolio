@@ -10,6 +10,7 @@
 .font_awesome_icons {
     margin: 0px 10px;
     font-size: 2.2rem;
+    padding-left: 1rem;
 }
 
 @keyframes rotateImage {

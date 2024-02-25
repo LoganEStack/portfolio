@@ -28,6 +28,9 @@
     .info_header {
         font-size: 7rem;
         line-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .info_description {

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Container fluid className="vh-100 d-flex flex-column ">
       <Row className="h-100">
-        <Col style={{ "margin": "auto" }}>
+        <Col style={{ "margin": "auto" }} xs={{ order: 2, span: 12 }} md={{ order: 1, span: 6 }}>
           <Row>
             <div className="info_section home">
               <p className="info_header">Hi, I'm Logan</p>
@@ -40,7 +40,7 @@ const Home = () => {
             </div>
           </Row>
         </Col>
-        <Col className="home_section">
+        <Col className="home_section" xs={{ order: 1, span: 12 }} md={{ order: 2, span: 6 }}>
           <img className="image_hand" src={hand} alt="Waving Hand"></img>
         </Col>
       </Row>
