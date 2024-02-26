@@ -81,7 +81,7 @@ a:hover {
   padding: 0 10px;
 }
 .route {
-  font-size: 7.5rem;
+  font-size: clamp(5rem, 3vw + 4vh, 8rem);
   cursor: pointer;
   font-family: Eugusto, Georgia, serif;
   display:inline-block;
@@ -102,13 +102,13 @@ a:hover {
   padding-bottom: 1.2rem;
 }
 .info_header {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 2vw, 4rem);
   font-weight:bold;
   margin-bottom: 0;
   line-height: 4rem;
 }
 .info_description {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1vw, 2rem);
   margin-bottom: 0;
 }
 .info_subdescription {
@@ -117,8 +117,8 @@ a:hover {
   color: #606060;
 }
 .font_awesome_icons {
-  font-size: 2.6rem;
-  margin: 0px 10px 0px 10px;
+  font-size: clamp(2rem, 1vw, 3rem);
+  margin-right: 20px;
   color: #222222;
 }
 
