@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import question_mark from '../assets/images/question_mark.png';
+import { ReactComponent as QuestionMark } from '../assets/images/question_mark.svg'
 
 const NoPage = () => {
   return (
@@ -16,7 +16,7 @@ const NoPage = () => {
               </p>
             </div>
             <div className='home_section'>
-              <img className="question_mark" src={question_mark} alt="question mark art"></img>
+              <QuestionMark/>
             </div>
           </Row>
         </Col>

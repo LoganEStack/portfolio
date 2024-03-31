@@ -7,8 +7,9 @@ import { ReactComponent as Github } from '../assets/images/github.svg'
 import { ReactComponent as Linkedin } from '../assets/images/linkedin.svg'
 import { ReactComponent as Mail } from '../assets/images/mail.svg'
 
-export default function Home() {
+export default function About() {
   return (
+    <div className='test'>
     <Container fluid>
       <Row>
         <Col>
@@ -28,5 +29,6 @@ export default function Home() {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };

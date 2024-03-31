@@ -6,7 +6,10 @@ const Layout = () => {
       <nav>
         <ul>
           <li>
-            <NavLink exact to="/" className={({ isActive }) => isActive ? "nav_active" : ""}>Home</NavLink>
+            <NavLink exact to="/" className={({ isActive }) => isActive ? "nav_active" : ""}>H</NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/about" className={({ isActive }) => isActive ? "nav_active" : ""}>About</NavLink>
           </li>
           <li>
             <NavLink to="/work" className={({ isActive }) => isActive ? "nav_active" : ""}>Work</NavLink>

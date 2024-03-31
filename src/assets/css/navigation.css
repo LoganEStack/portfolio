@@ -1,20 +1,32 @@
 a {
-    color: #1b1b1b;
+    color: inherit;
     text-decoration: none;
 }
 
 a:hover {
-    color: #c1b997;
+    color: #e5d9a7;
+}
+
+#links {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+#links a {
+    padding-right:.5rem;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 nav ul {
+    padding: 0;
+    margin: 0;
     display: flex; 
     list-style: none;
 }
@@ -27,15 +39,6 @@ nav ul li {
 
 .nav_active {
     color: #dac779;
-}
-
-#links {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-}
-#links a {
-    padding-right:.5rem;
 }
 
 @media screen and (max-width: 1145px) {
