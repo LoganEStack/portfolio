@@ -4,23 +4,19 @@ a {
 }
 
 a:hover {
-    color: #dac779;
+    color: #c1b997;
 }
 
 nav {
-    position: fixed;
-    width: 60%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 nav ul {
-    margin: 0;
-    padding-right: 3vw;
-    list-style: none;
     display: flex; 
-    justify-content: flex-end; 
+    list-style: none;
 }
 
 nav ul li {
@@ -31,6 +27,15 @@ nav ul li {
 
 .nav_active {
     color: #dac779;
+}
+
+#links {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+#links a {
+    padding-right:.5rem;
 }
 
 @media screen and (max-width: 1145px) {
@@ -46,20 +51,3 @@ nav ul li {
         font-size: 2rem;
     }
 }
-/* nav ul {
-    margin: 0;
-    padding-right: 3vw;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    padding: 1.5vw;
-    float: right;
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.nav_active {
-    color: #dac779;
-} */
