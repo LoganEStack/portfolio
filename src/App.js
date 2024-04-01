@@ -1,25 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from './pages/Home';
-import About from './pages/About';
-import Work from './pages/Work';
-import Projects from './pages/Projects';
-import Art from './pages/Art';
-import NoPage from "./pages/NoPage";
+import { BrowserRouter } from 'react-router-dom';
+import Navigation from './pages/Navigation';
+import AnimatedRoutes from './components/AnimatedRoutes'
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="work" element={<Work />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="art" element={<Art />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
+      <Navigation />
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }

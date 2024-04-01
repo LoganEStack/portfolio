@@ -1,17 +1,22 @@
 .name {
     position: absolute;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16rem;
+    user-select: none;
+    font-size: min(35vh, 25rem);
     font-weight: bold;
-    line-height:12rem;
+    line-height: 28vh;
 }
 
-header#Logan {
+.name_background {
+    color: #272727;
+}
+
+div#Logan {
     left: 2rem;
     top: 2rem;
 }
 
-header#Stack {
+div#Stack {
     right: 2rem;
     bottom: 2rem;
 }

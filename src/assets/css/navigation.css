@@ -11,6 +11,7 @@ a:hover {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
+    z-index: 1;
 }
 
 #links a {
@@ -22,6 +23,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 nav ul {
@@ -33,7 +35,7 @@ nav ul {
 
 nav ul li {
     padding: 1.5vw;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -41,7 +43,7 @@ nav ul li {
     color: #dac779;
 }
 
-@media screen and (max-width: 1145px) {
+/* @media screen and (max-width: 1145px) {
     nav {
         left: 0;
         width: 100%;
@@ -53,4 +55,4 @@ nav ul li {
     nav ul li {
         font-size: 2rem;
     }
-}
+} */

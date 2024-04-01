@@ -1,12 +1,18 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { ReactComponent as Home } from '../assets/images/home.svg'
 
-const Layout = () => {
+export default function Navigation() {
+  const location = useLocation();
+  const isAboutPage = location.pathname !== "/";
+
   return (
     <>
-      <nav>
+      <nav className={(isAboutPage ? 'nav_color navbar_top' : '')}>
         <ul>
           <li>
-            <NavLink exact to="/" className={({ isActive }) => isActive ? "nav_active" : ""}>H</NavLink>
+            <NavLink exact to="/" className={({ isActive }) => isActive ? "nav_active" : ""}>
+              <Home width="3rem" height="auto" style={{"display":"block"}} />
+            </NavLink>
           </li>
           <li>
             <NavLink exact to="/about" className={({ isActive }) => isActive ? "nav_active" : ""}>About</NavLink>
@@ -22,10 +28,6 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
-
-      <Outlet />
     </>
   )
 };
-
-export default Layout;

@@ -1,0 +1,16 @@
+.invert_theme {
+    color: #eeebe8;
+    background-color: #1b1b1b;
+}
+
+nav.nav_color {
+    color: #eeebe8;
+}
+
+nav.navbar_top {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+}

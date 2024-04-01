@@ -1,40 +1,11 @@
-.info_section {
-    padding-left: 6vw;
-    order: 0;
-}
-
-.info_header {
-    padding-top: 1.5rem;
-    line-height: 150px;
-    font-size: 10rem;
-    font-weight: bold;
-}
-
-.info_description {
-    width: 60ch;
-    font-size: 1.3rem;
-    padding-left: 1vw;
-}
-
-@media screen and (max-width: 1145px) {
-    .info_section {
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        order: 2;
-    }
-
-    .info_header {
-        font-size: 7rem;
-        line-height: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .info_description {
-        width: 60ch;
-        font-size: 1.3rem;
-    }
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 66ch;
+    margin: 0 auto;
+    position: relative;
+    font-size: 1.5rem;
 }

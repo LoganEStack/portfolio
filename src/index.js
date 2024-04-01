@@ -7,6 +7,7 @@ import './index.css';
 import './App.css';
 import './assets/css/about.css';
 import './assets/css/art.css';
+import './assets/css/color.css';
 import './assets/css/name.css';
 import './assets/css/images.css';
 import './assets/css/info.css';
