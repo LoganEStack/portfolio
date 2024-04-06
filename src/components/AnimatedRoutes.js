@@ -1,22 +1,27 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Work from './pages/Work';
-import Projects from './pages/Projects';
-import Art from './pages/Art';
-import NoPage from './pages/NoPage';
+import { AnimatePresence } from 'framer-motion'
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Work from '../pages/Work';
+import Projects from '../pages/Projects';
+import Art from '../pages/Art';
+import NoPage from '../pages/NoPage';
+// import Navigation from '../pages/Navigation';
 
 export default function AnimatedRoutes() {
-  const locatino = useLocation();
+  const location = useLocation();
 
   return (
-    <Routes location={location} key={location.pathname}>
-      <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="work" element={<Work />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="art" element={<Art />} />
-      <Route path="*" element={<NoPage />} />
-    </Routes>
+    <AnimatePresence>
+      {/* <Navigation /> */}
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="work" element={<Work />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="art" element={<Art />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </AnimatePresence>
   )
 }

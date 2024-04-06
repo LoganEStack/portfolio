@@ -1,18 +1,29 @@
+import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Links from '../components/links';
+import Navigation from './Navigation';
 
 export default function Home() {
   return (
-    <Container fluid className="vh-100">
-      <Row>
-        <Col>
-          <div className="name" id="Logan">Logan</div>
-          <div className="name" id="Stack">Stack</div>
-          <Links/>
-        </Col>
-      </Row>
-    </Container>
+    <motion.div
+      initial={{ y: '-100vh' }}
+      animate={{ y: 0 }}
+      exit={{ y: '-100vh' }}
+      transition={{ duration: 0.5 }}
+      style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
+    >
+      <Container fluid className="vh-100">
+        <Row>
+          <Col>
+            <div className="name" id="Logan">Logan</div>
+            <div className="name" id="Stack">Stack</div>
+            <Links />
+            <Navigation />
+          </Col>
+        </Row>
+      </Container>
+    </motion.div>
   );
 };
