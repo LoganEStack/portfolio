@@ -1,14 +1,10 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import resume from '../assets/Logan_Stack_Resume.pdf'
-import { ReactComponent as Github } from '../assets/images/github.svg'
-import { ReactComponent as Linkedin } from '../assets/images/linkedin.svg'
-import { ReactComponent as Mail } from '../assets/images/mail.svg'
-import { ReactComponent as Resume } from '../assets/images/resume.svg'
+import { ReactComponent as Github } from '../assets/images/svg/github.svg'
+import { ReactComponent as Linkedin } from '../assets/images/svg/linkedin.svg'
+import { ReactComponent as Mail } from '../assets/images/svg/mail.svg'
+import { ReactComponent as Resume } from '../assets/images/svg/resume.svg'
 
-export default function Home() {
+export default function Links() {
   return (
     <div id="links">
       <a href="mailto:loganestack@gmail.com" title="email" target="_blank" rel="noopener noreferrer">

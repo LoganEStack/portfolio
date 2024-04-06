@@ -6,14 +6,12 @@ import Work from '../pages/Work';
 import Projects from '../pages/Projects';
 import Art from '../pages/Art';
 import NoPage from '../pages/NoPage';
-// import Navigation from '../pages/Navigation';
 
 export default function AnimatedRoutes() {
   const location = useLocation();
 
   return (
     <AnimatePresence>
-      {/* <Navigation /> */}
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />

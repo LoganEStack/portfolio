@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { ReactComponent as Home } from '../assets/images/home.svg'
+// import { ReactComponent as Home } from '../assets/images/svg/home.svg'
 
 export default function Navigation() {
   const location = useLocation();
@@ -9,11 +9,11 @@ export default function Navigation() {
     <>
       <nav className={(isAboutPage ? 'nav_color navbar_top' : '')}>
         <ul>
-          <li>
+          {/* <li>
             <NavLink exact to="/" className={({ isActive }) => isActive ? "nav_active" : ""}>
               <Home width="3rem" height="auto" style={{"display":"block"}} />
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink exact to="/about" className={({ isActive }) => isActive ? "nav_active" : ""}>About</NavLink>
           </li>

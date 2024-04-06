@@ -2,8 +2,7 @@ import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Links from '../components/links';
-import Navigation from './Navigation';
+import BackArrow from '../components/BackArrow'
 
 export default function Projects() {
   return (
@@ -15,22 +14,21 @@ export default function Projects() {
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
       <Container fluid className="vh-100 invert_theme">
-        <Row style={{ "height": "100%" }}>
-          <Col>
-            <div className="name name_background" id="Logan">Logan</div>
-            <div className="name name_background" id="Stack">Stack</div>
-            <Links />
-            <Navigation />
-            <div className="info">
-              <p>
-                Hi, I'm Logan. I'm a software engineer based in Detroit, MI with a passion for creativity.
-                I'm currently employed at General Motors, where I write software to test the cameras that go
-                into our autonomous vehicles. You can read about my past work experience below and can also
-                checkout my Github for links to personal projects.
-              </p>
-            </div>
-          </Col>
-        </Row>
+        <BackArrow/>
+        <div className='flex-container'>
+          <section className="info">
+            <div className='info_header'>Projects</div>
+            <p>
+              verdsvesrd earfas reafw serfg aerfaer
+            </p>
+            <div className='info_subheader'>picture_book</div>
+            <img src="../assets/images/projects/picture_book.png" alt="picture_book" width="500" height="auto" />
+            <p>
+            A program that adds AI generated illustrations to books by using 
+            topic modeling to determine the central theme of each page.
+            </p>
+          </section>
+        </div>
       </Container>
     </motion.div>
   );

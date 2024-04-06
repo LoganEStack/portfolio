@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Links from '../components/links';
+import Links from '../components/Links';
 import Navigation from './Navigation';
 
 export default function Home() {
@@ -15,14 +15,11 @@ export default function Home() {
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
       <Container fluid className="vh-100">
-        <Row>
-          <Col>
-            <div className="name" id="Logan">Logan</div>
-            <div className="name" id="Stack">Stack</div>
-            <Links />
-            <Navigation />
-          </Col>
-        </Row>
+        <div className='flex-container'>
+          <header>Logan Stack</header>
+          <Navigation />
+          <Links />
+        </div>
       </Container>
     </motion.div>
   );

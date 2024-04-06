@@ -2,10 +2,9 @@ import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Links from '../components/links';
-import Navigation from './Navigation';
+import BackArrow from '../components/BackArrow'
 
-export default function Work() {
+export default function About() {
   return (
     <motion.div
       initial={{ y: '100vh' }}
@@ -15,23 +14,32 @@ export default function Work() {
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
       <Container fluid className="vh-100 invert_theme">
-        <Row style={{ "height": "100%" }}>
-          <Col>
-            <div className="name name_background" id="Logan">Logan</div>
-            <div className="name name_background" id="Stack">Stack</div>
-            <Links />
-            <Navigation />
-            <section className="info">
-              <div className="info_header">General Motors</div>
-              <p>
-                Hi, I'm Logan. I'm a software engineer based in Detroit, MI with a passion for creativity.
-                I'm currently employed at General Motors, where I write software to test the cameras that go
-                into our autonomous vehicles. You can read about my past work experience below and can also
-                checkout my Github for links to personal projects.
-              </p>
-            </section>
-          </Col>
-        </Row>
+        <BackArrow />
+        <div className='flex-container'>
+          <section className="info">
+            <div className='info_header'>Work</div>
+            <div className='info_subheader'>General Motors</div>
+            <div className='info_subtext'>Software Engineer (2022-Present)</div>
+            <p>
+              I write software to analyze image quality for the cameras on GM's autonomous vehicles.
+            </p>
+            <div className='info_subtext'>DevOps Engineer (2019-2022)</div>
+            <p>
+              I worked on the automation of build and testing software for the code residing in
+              60 individual Electronic Control Units for the Vehicles and Embedded Controls division.
+            </p>
+            <div className='info_subheader'>Michelin</div>
+            <div className='info_subtext'>Software Engineer Intern (2018)</div>
+            <p>
+              I spent my time on the Dev Ops Team writing applications to support other sub-departments within IT.
+            </p>
+            <div className='info_subheader'>IEEE</div>
+            <div className='info_subtext'>Software Engineer Intern (2017)</div>
+            <p>
+              I built and maintained an internal IT Portal for department-wide use using WordPress.
+            </p>
+          </section>
+        </div>
       </Container>
     </motion.div>
   );

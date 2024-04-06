@@ -3,7 +3,32 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  font-family: "Calibri", sans-serif;
+  font-family: "Lato", "Calibri", sans-serif;
   color: #1b1b1b;
   background-color: #eeebe8;
+}
+
+.flex-container {
+  display: flex;           
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.invert_theme {
+  color: #eeebe8;
+  background-color: #1b1b1b;
+}
+
+#back_arrow {
+  width: 2rem; 
+  height: auto;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  color: #dac779;
+}
+#back_arrow:hover {
+  color: #e5d9a7;
 }

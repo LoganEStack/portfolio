@@ -1,15 +1,23 @@
 .info {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    height: 100%;
     width: 66ch;
     margin: 0 auto;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .info_header {
-    font-size: 3rem;
+    font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    font-size: 6rem;
+}
+
+.info_subheader {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.info_text_centered {
+    text-align: center;
 }
