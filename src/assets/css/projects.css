@@ -1,0 +1,7 @@
+.project_image {
+    border-radius: 8px;
+    margin: 1rem;
+    user-drag: none;
+    -webkit-user-drag: none; /* Chrome, Safari, and Opera */
+    -moz-user-drag: none; /* Firefox */
+}

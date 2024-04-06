@@ -18,10 +18,10 @@ export default function NoPage() {
         <div className='flex-container'>
           <section className="info">
             <div className='info_header'>404</div>
-            <div className='info_text_centered'>
+            <p>
               Page not found. Click the up arrow at the top of the screen to go 
               back to the home page.
-            </div>
+            </p>
           </section>
         </div>
       </Container>

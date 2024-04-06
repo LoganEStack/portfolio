@@ -3,21 +3,20 @@
     margin: 0 auto;
     position: relative;
     font-size: 1rem;
+    text-align: center;
 }
 
 .info_header {
     font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    justify-content: center;
     padding-bottom: 4rem;
     font-size: 6rem;
 }
 
 .info_subheader {
-    padding-bottom: 1rem;
+    padding: 2rem 0 1rem 0;
     font-size: 2rem;
 }
 
-.info_text_centered {
-    text-align: center;
+.info_subtext {
+    color:#a0a0a0;
 }

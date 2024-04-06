@@ -3,7 +3,7 @@ import { ReactComponent as Linkedin } from '../assets/images/svg/linkedin.svg'
 import { ReactComponent as Mail } from '../assets/images/svg/mail.svg'
 import { ReactComponent as Resume } from '../assets/images/svg/resume.svg'
 
-export default function Links() {
+export default function SocialLinks() {
   return (
     <div id="links">
       <a href="mailto:loganestack@gmail.com" title="email" target="_blank" rel="noopener noreferrer">

@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: "Lato", "Calibri", sans-serif;
   color: #1b1b1b;
-  background-color: #eeebe8;
+  background-color: #e9dece;
 }
 
 .flex-container {
@@ -17,7 +17,7 @@ body {
 }
 
 .invert_theme {
-  color: #eeebe8;
+  color: #e9dece;
   background-color: #1b1b1b;
 }
 

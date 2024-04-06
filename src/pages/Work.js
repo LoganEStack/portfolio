@@ -18,7 +18,9 @@ export default function About() {
         <div className='flex-container'>
           <section className="info">
             <div className='info_header'>Work</div>
-            <div className='info_subheader'>General Motors</div>
+            <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
+              <div className='info_subheader'>General Motors</div>
+            </a>
             <div className='info_subtext'>Software Engineer (2022-Present)</div>
             <p>
               I write software to analyze image quality for the cameras on GM's autonomous vehicles.
@@ -28,12 +30,16 @@ export default function About() {
               I worked on the automation of build and testing software for the code residing in
               60 individual Electronic Control Units for the Vehicles and Embedded Controls division.
             </p>
-            <div className='info_subheader'>Michelin</div>
+            <a href="https://www.michelin.com/" target="_blank" rel="noopener noreferrer">
+              <div className='info_subheader'>Michelin</div>
+            </a>
             <div className='info_subtext'>Software Engineer Intern (2018)</div>
             <p>
               I spent my time on the Dev Ops Team writing applications to support other sub-departments within IT.
             </p>
-            <div className='info_subheader'>IEEE</div>
+            <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">
+              <div className='info_subheader'>IEEE</div>
+            </a>
             <div className='info_subtext'>Software Engineer Intern (2017)</div>
             <p>
               I built and maintained an internal IT Portal for department-wide use using WordPress.

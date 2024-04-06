@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Links from '../components/Links';
+import Links from '../components/SocialLinks';
 import Navigation from './Navigation';
 
 export default function Home() {
