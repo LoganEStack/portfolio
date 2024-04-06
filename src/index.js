@@ -8,7 +8,6 @@ import './App.css';
 import './assets/css/about.css';
 import './assets/css/art.css';
 import './assets/css/home.css';
-import './assets/css/images.css';
 import './assets/css/info.css';
 import './assets/css/navigation.css';
 import './assets/css/projects.css';
