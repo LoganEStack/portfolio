@@ -1,4 +1,3 @@
-import resume from '../assets/Logan_Stack_Resume.pdf'
 import { ReactComponent as Github } from '../assets/images/svg/github.svg'
 import { ReactComponent as Linkedin } from '../assets/images/svg/linkedin.svg'
 import { ReactComponent as Mail } from '../assets/images/svg/mail.svg'
@@ -16,7 +15,7 @@ export default function Links() {
       <a href="https://github.com/loganestack" title="github" target="_blank" rel="noopener noreferrer">
         <Github width="2rem" height="auto" />
       </a>
-      <a href={resume} title="resume" target="_blank" rel="noopener noreferrer">
+      <a href="/Logan_Stack_Resume.pdf" title="resume" target="_blank" rel="noopener noreferrer">
         <Resume width="2rem" height="auto" />
       </a>
     </div>
