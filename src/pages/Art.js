@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
+import Artwork from '../components/Artwork'
 
 import two_piece_abstract from '../assets/images/art/2 Piece Abstract.jpg';
 import three_piece_abstract from '../assets/images/art/3 Piece Abstract.jpg';
@@ -49,84 +50,37 @@ export default function Art() {
           <Row>
             <section className="info">
               <div className='info_header'>Art</div>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
             </section>
           </Row>
           <Row>
             <Col>
               <div className="artwork_scroll_box">
                 <div class="scrollbar" id="scrollbar1">
-                  <div className='artwork'>
-                    <img src={bill_murray} alt="Bill Murray art" onClick={() => openPopup(bill_murray)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={bird_with_arms} alt="bird with arms art" onClick={() => openPopup(bird_with_arms)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={two_piece_abstract} alt="two piece abstract art" onClick={() => openPopup(two_piece_abstract)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={three_piece_abstract} alt="three piece abstract art" onClick={() => openPopup(three_piece_abstract)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={chaplin} alt="Chaplin art" onClick={() => openPopup(chaplin)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={dog_tags} alt="dog_tags drawing" onClick={() => openPopup(dog_tags)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={dog} alt="dog drawing" onClick={() => openPopup(dog)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={dragonball} alt="dragonball drawing" onClick={() => openPopup(dragonball)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={fireball} alt="fireball drawing" onClick={() => openPopup(fireball)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={flower} alt="flower drawing" onClick={() => openPopup(flower)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={gorilla} alt="gorilla drawing" onClick={() => openPopup(gorilla)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={nachopus} alt="nachopus drawing" onClick={() => openPopup(nachopus)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={six_shooter} alt="six_shooter drawing" onClick={() => openPopup(six_shooter)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={spiderman} alt="spiderman drawing" onClick={() => openPopup(spiderman)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={trex} alt="trex drawing" onClick={() => openPopup(trex)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={toys} alt="toys drawing" onClick={() => openPopup(toys)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={tucan} alt="tucan drawing" onClick={() => openPopup(tucan)} />
-                  </div>
-
-                  <div className='artwork'>
-                    <img src={yoshi} alt="yoshi drawing" onClick={() => openPopup(yoshi)} />
-                  </div>
-
+                  <Artwork src={bill_murray} alt="Bill Murray art" openPopup={openPopup} />
+                  <Artwork src={bird_with_arms} alt="bird with arms art" openPopup={openPopup} />
+                  <Artwork src={two_piece_abstract} alt="two piece abstract art" openPopup={openPopup} />
+                  <Artwork src={three_piece_abstract} alt="three piece abstract art" openPopup={openPopup} />
+                  <Artwork src={chaplin} alt="Chaplin art" openPopup={openPopup} />
+                  <Artwork src={dog_tags} alt="dog_tags drawing" openPopup={openPopup} />
+                  <Artwork src={dog} alt="dog drawing" openPopup={openPopup} />
+                  <Artwork src={dragonball} alt="dragonball drawing" openPopup={openPopup} />
+                  <Artwork src={fireball} alt="fireball drawing" openPopup={openPopup} />
+                  <Artwork src={flower} alt="flower drawing" openPopup={openPopup} />
+                  <Artwork src={gorilla} alt="gorilla drawing" openPopup={openPopup} />
+                  <Artwork src={nachopus} alt="nachopus drawing" openPopup={openPopup} />
+                  <Artwork src={six_shooter} alt="six_shooter drawing" openPopup={openPopup} />
+                  <Artwork src={spiderman} alt="spiderman drawing" openPopup={openPopup} />
+                  <Artwork src={trex} alt="trex drawing" openPopup={openPopup} />
+                  <Artwork src={toys} alt="toys drawing" openPopup={openPopup} />
+                  <Artwork src={tucan} alt="tucan drawing" openPopup={openPopup} />
+                  <Artwork src={yoshi} alt="yoshi drawing" openPopup={openPopup} />
+                  <Artwork src={bill_murray} alt="" openPopup={openPopup} />
                   {popupImage && (
                     <div className="popup-overlay" onClick={closePopup}>
                       <div className="popup-content">

@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Links from '../components/SocialLinks';
+import SocialLinks from '../components/SocialLinks';
 import Navigation from './Navigation';
 
 export default function Home() {
@@ -18,7 +16,7 @@ export default function Home() {
         <div className='flex-container'>
           <header>Logan Stack</header>
           <Navigation />
-          <Links />
+          <SocialLinks />
         </div>
       </Container>
     </motion.div>

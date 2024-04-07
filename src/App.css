@@ -21,14 +21,12 @@ body {
   background-color: #1b1b1b;
 }
 
-#back_arrow {
-  width: 2rem; 
-  height: auto;
+.top_shadow {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  color: #dac779;
-}
-#back_arrow:hover {
-  color: #e5d9a7;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the shadow as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
+  z-index: 2; /* Ensure the shadow appears above other elements */
 }

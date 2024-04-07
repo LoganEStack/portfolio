@@ -1,5 +1,7 @@
 header {
     font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 5rem;
+    text-align: center;
     font-weight: bold;
+    line-height: 7rem;
 }

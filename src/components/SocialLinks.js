@@ -7,16 +7,16 @@ export default function SocialLinks() {
   return (
     <div id="links">
       <a href="mailto:loganestack@gmail.com" title="email" target="_blank" rel="noopener noreferrer">
-        <Mail width="2rem" height="auto" />
+        <Mail width="2rem" height="100%" />
       </a>
       <a href="https://www.linkedin.com/in/logan-stack/" title="linkedin" target="_blank" rel="noopener noreferrer">
-        <Linkedin width="2rem" height="auto" />
+        <Linkedin width="2rem" height="100%" />
       </a>
       <a href="https://github.com/loganestack" title="github" target="_blank" rel="noopener noreferrer">
-        <Github width="2rem" height="auto" />
+        <Github width="2rem" height="100%" />
       </a>
       <a href="/Logan_Stack_Resume.pdf" title="resume" target="_blank" rel="noopener noreferrer">
-        <Resume width="2rem" height="auto" />
+        <Resume width="2rem" height="100%" />
       </a>
     </div>
   );

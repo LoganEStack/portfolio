@@ -1,28 +1,26 @@
+/* Container */
 .artwork_scroll_box {
     display: flex;
     flex: 50%;
     flex-wrap: wrap;
-    height: 600px;
+    height: 700px;
     width: 800px;
     overflow: auto;
-    border: 4px solid #1f1f1f;
+    border: 4px solid #282828;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
+/* Images */
 .artwork {
-    flex: 50%;
-    padding: 33px;
-    min-height: min-content;
-    margin: auto;
+    padding: 2rem;
     text-align: center;
 }
 
 .artwork img {
-    padding: 1rem;
     width: 300px;
     height: auto;
-    border: 4px solid #1f1f1f;
+    border: 4px solid #898277;
     border-radius: 10px;
     box-sizing: border-box;
     -webkit-filter: grayscale(100%);
@@ -32,9 +30,9 @@
 .artwork img:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    background-color: #dac779;
 }
 
+/* Pop-up */
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -62,6 +60,7 @@
     border-radius: 10px;
 }
 
+/* Scroll bar */
 .scrollbar {
     height: 100%;
     width: 100%;
@@ -80,18 +79,5 @@
 
 #scrollbar1::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #dac779;
-}
-
-@media screen and (max-width: 1145px) {
-    .art_section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-    .artwork_scroll_box {
-        height: 60vh;
-        width: 60vw;
-    }
+    background-color: #c9b76f;
 }

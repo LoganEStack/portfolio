@@ -20,12 +20,10 @@ export default function Projects() {
           <section className="info">
             <div className='info_header'>Projects</div>
             <Row>
-              <Col>
+              <Col s={6}>
                 <div className='info_subheader'>picture_book</div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }}
                 >
                   <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
                     <img className='project_image' src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
@@ -37,8 +35,8 @@ export default function Projects() {
                   topic modeling to determine the central theme of each page.
                 </p>
               </Col>
-              {/* <Col xs={6}>
-                <div className='info_subheader'>picture_book</div>
+              <Col s={6}>
+                <div className='info_subheader'>some other project</div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   onHoverStart={e => { }}
@@ -50,10 +48,10 @@ export default function Projects() {
                 </motion.div>
                 <ProjectLinks url={"https://github.com/LoganEStack/picture_book"} />
                 <p>
-                  A program that adds AI generated illustrations to books by using
-                  topic modeling to determine the central theme of each page.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-              </Col> */}
+              </Col>
             </Row>
           </section>
         </div>
