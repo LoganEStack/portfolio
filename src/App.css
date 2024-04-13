@@ -1,190 +1,31 @@
-@font-face {
-  font-family: Hello_Galleria;
-  src: url("./assets/fonts/Hello_Galleria.ttf");
-}
-@font-face {
-  font-family: Eugusto;
-  src: url("./assets/fonts/Eugusto.otf");
-}
-#root {
-  /* When you change to body this doesnt work */
-  font-family: "Calibri", sans-serif;
-  color: #222222;
-}
-#site_body {
-  align-items: center;
-  justify-content: center;
-  max-width: 2200px;
-  width: 90%;
-}
-a {
-  color: #222222;
-  text-decoration: none;
-}
-a:hover { 
-  color: gray; 
-}
-.background {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background: #f4f1e8;
-  min-height: 100vh;
-}
-.name {
-  margin: 4rem auto;
-  padding: .5rem 1rem;
-  position:relative;
-}
-.name_header {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.name_subheader {
-  font-size: 1.4rem;
-}
-.name_outline {
-  position:absolute;
-  width: 1rem;
-  height: 1rem;
-  border: .3rem solid #222222;
-  border-left: 0;
-  border-top: 0;
-}
-.name_outline:nth-child(1) {
-  top:0;
-  left:0; 
-  transform: rotate(180deg);   
-}
-.name_outline:nth-child(2) {
-  top:0;
-  right:0;
-  transform: rotate(270deg);
-}
-.name_outline:nth-child(3) {
-  bottom:0;
-  left:0;
-  transform: rotate(90deg);
-}
-.name_outline:nth-child(4) {
-  bottom:0;
-  right:0;
-  transform: rotate(0deg);
-}
-#routes {
-  justify-content: center
-}
-.routes_justified {
-  text-align: right;
-  padding: 0 10px;
-}
-.route {
-  font-size: clamp(5rem, 3vw + 4vh, 8rem);
-  cursor: pointer;
-  font-family: Eugusto, Georgia, serif;
-  display:inline-block;
-  transition: all .2s linear;
-}
-.skew {
-  transform: skew(-15deg);
-}
-.route:hover {
-  transform: skew(-15deg);
-}
-.info {
-  animation: .2s ease-out 0s 1 slideInFromLeft;
-  text-align: left;
-  padding: 0px 30px;
-}
-.info_section {
-  padding-bottom: 1.2rem;
-}
-.info_header {
-  font-size: clamp(2.5rem, 2vw, 4rem);
-  font-weight:bold;
-  margin-bottom: 0;
-  line-height: 4rem;
-}
-.info_description {
-  font-size: clamp(1.5rem, 1vw, 2rem);
-  margin-bottom: 0;
-  max-width: 50ch;
-}
-.info_subdescription {
-  font-size: 1.2rem;
-  margin-bottom: 0;
-  color: #606060;
-  max-width: 50ch;
-}
-.font_awesome_icons {
-  font-size: clamp(2rem, 1vw, 3rem);
-  margin-right: 20px;
-  color: #222222;
+html,
+body {
+  font-family: "Lato", "Calibri", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #1b1b1b;
+  background-color: #e9dece;
 }
 
-/* @media screen and (max-width: 991px) {
-  .route {
-    font-size: 1rem;
-  }
-  .underline {
-    text-decoration: underline;
-  }
-  .info {
-    padding: 0px 0px;
-  }
-  .background {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #f4f1e8;
-    min-height: 100vh;
-  }
-} */
-@media screen and (max-width: 991px) {
-  html {
-    font-size: 16px;
-    background:green;
-  }
-  .info {
-    padding: 0px 0px;
-  }
-  .underline {
-    text-decoration: underline;
-  }
-  .background {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #f4f1e8;
-    min-height: 100vh;
-  }
-  .route {
-    font-size: 1.2rem;
-  }
-  .info_header {
-    font-size: 2rem;
-  }
-  .info_description {
-    font-size: 1.2rem;
-  }
-  .info_subdescription {
-    font-size: 1rem;
-  }
-  .font_awesome_icons {
-    font-size: 2rem;
-  }
+.invert_theme {
+  overflow: auto;
+  color: #e9dece;
+  background-color: #1b1b1b;
 }
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-5%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+
+header h1 {
+  font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 7rem;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 38rem;
 }

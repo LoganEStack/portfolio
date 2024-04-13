@@ -1,0 +1,33 @@
+.project_spacing {
+    margin-top: 5rem;
+    justify-content: flex-start;
+}
+
+.info_project {
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.project p {
+    max-width: 50ch;
+}
+
+.project_image {
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 30rem;
+    width: 100%;
+    height: auto;
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+}
