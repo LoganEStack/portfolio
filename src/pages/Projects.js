@@ -24,7 +24,7 @@ export default function Projects() {
           <section className="info_project">
             <Row>
               <Col md={6} className='project'>
-                <div className='info_subheader'>picture_book</div>
+                <div className='info_subheader'><h2>picture_book</h2></div>
                 <motion.div whileHover={{ scale: 1.05 }} >
                   <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
                     <img className='project_image' src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
@@ -38,7 +38,7 @@ export default function Projects() {
               </Col>
               
               <Col md={6} className='project'>
-                <div className='info_subheader'>picture_book</div>
+                <div className='info_subheader'><h2>picture_book</h2></div>
                 <motion.div whileHover={{ scale: 1.05 }} >
                   <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
                     <img className='project_image' src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />

@@ -20,7 +20,7 @@ export default function Work() {
         <div className='flex-container'>
           <section className="info">
             <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
-              <div className='info_subheader'>General Motors</div>
+              <div className='info_subheader'><h2>General Motors</h2></div>
             </a>
             <div className='info_subtext'>Software Engineer (2022-Present)</div>
             <p style={{'paddingBottom': '0'}}>
@@ -32,14 +32,14 @@ export default function Work() {
               60 individual Electronic Control Units for the Vehicles and Embedded Controls division.
             </p>
             <a href="https://www.michelin.com/" target="_blank" rel="noopener noreferrer">
-              <div className='info_subheader'>Michelin</div>
+              <div className='info_subheader'><h2>Michelin</h2></div>
             </a>
             <div className='info_subtext'>Software Engineer Intern (2018)</div>
             <p>
               I spent my time on the Dev Ops Team writing applications to support other sub-departments within IT.
             </p>
             <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">
-              <div className='info_subheader'>IEEE</div>
+              <div className='info_subheader'><h2>IEEE</h2></div>
             </a>
             <div className='info_subtext'>Software Engineer Intern (2017)</div>
             <p>

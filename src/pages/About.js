@@ -14,15 +14,12 @@ export default function About() {
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
         <div className='aaa'>
-          <div className='page_header'>
-            <h1>About</h1>
-          </div>
+          <div className='page_header'><h1>About</h1></div>
         </div>
 
-        <div className='aaa'>
           <div className='flex-container'>
             <section className="info">
-              <div className='info_subheader'>Hi, I'm Logan.</div>
+              <div className='info_subheader'><h2>Hi, I'm Logan.</h2></div>
               <p>
                 I'm a software engineer based in Detroit, MI with a passion for creativity.
                 I'm currently employed at General Motors, where I write software to test the cameras that go
@@ -31,8 +28,6 @@ export default function About() {
               </p>
             </section>
           </div>
-        </div>
-
       </Container>
     </motion.div>
   );

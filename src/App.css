@@ -9,7 +9,7 @@ body {
 }
 
 .invert_theme {
-  overflow: scroll;
+  overflow: auto;
   color: #e9dece;
   background-color: #1b1b1b;
 }
@@ -17,9 +17,9 @@ body {
 header h1 {
   font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 5rem;
-  text-align: center;
   font-weight: bold;
   line-height: 7rem;
+  text-align: center;
 }
 
 .flex-container {
@@ -28,8 +28,4 @@ header h1 {
   justify-content: center;
   align-items: center;
   min-height: 38rem;
-}
-
-.aaa {
-  display: block;
 }
