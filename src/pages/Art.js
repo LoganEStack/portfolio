@@ -49,19 +49,17 @@ export default function About() {
         <div className='page_header'><h1>Art</h1></div>
 
         <div className='flex-container'>
-          <Row>
-            <section className="info">
-              <p>
-                Creativity is a big part of my life. I love to excercise my skills through a variety of 
-                mediums; predominantly arcylic and pen and ink. This is a catalog of many of my pieces 
-                over the past few years. It ranges broadly in terms of both subject and quality. Very 
-                rarely am I actually making anything for myself, though. I tend to just paint whatever 
-                I think my friends might like because it makes them smile. A lot of the works in here 
-                are directly inspired by existing works, as requested by friends. I don't claim any form 
-                of authorship of those pieces. Take a look around and please let me know what you think!
-              </p>
-            </section>
-          </Row>
+          <section className="info">
+            <p style={{'paddingTop': '2rem'}}>
+              Creativity is a big part of my life. I love to excercise my skills through a variety of
+              mediums; predominantly arcylic and pen and ink. This is a catalog of many of my pieces
+              over the past few years. It ranges broadly in terms of both subject and quality. Very
+              rarely am I actually making anything for myself, though. I tend to just paint whatever
+              I think my friends might like because it makes them smile. A lot of the works in here
+              are directly inspired by existing works, as requested by friends. I don't claim any form
+              of authorship of those pieces. Take a look around and please let me know what you think!
+            </p>
+          </section>
           <Row className='art_section'>
             <Row>
               <Col>
@@ -135,7 +133,7 @@ export default function About() {
                 <Artwork src={yoshi} alt="yoshi drawing" openPopup={openPopup} />
               </Col>
             </Row>
-            
+
             {popupImage && (
               <div className="popup-overlay" onClick={closePopup}>
                 <div className="popup-content">
