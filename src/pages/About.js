@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
 
 export default function About() {
@@ -13,11 +11,14 @@ export default function About() {
       transition={{ duration: 0.5 }}
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
-      <Container fluid className="vh-100 invert_theme top_shadow">
-        <BackArrow/>
+      <Container fluid className="vh-100 invert_theme">
+        <BackArrow />
+        <div className='page_header'>
+          <h1>About</h1>
+        </div>
+
         <div className='flex-container'>
           <section className="info">
-            <div className='info_header'>About</div>
             <div className='info_subheader'>Hi, I'm Logan.</div>
             <p>
               I'm a software engineer based in Detroit, MI with a passion for creativity.

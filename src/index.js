@@ -7,11 +7,9 @@ import './index.css';
 import './App.css';
 import './assets/css/about.css';
 import './assets/css/art.css';
-import './assets/css/home.css';
 import './assets/css/info.css';
 import './assets/css/navigation.css';
 import './assets/css/projects.css';
-import './assets/css/work.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

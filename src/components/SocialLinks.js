@@ -21,3 +21,5 @@ export default function SocialLinks() {
     </div>
   );
 };
+
+// Icons by freeicons4you@gmail.com on freeicons.io

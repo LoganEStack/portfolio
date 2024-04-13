@@ -25,7 +25,8 @@ import toys from '../assets/images/art/Toys.jpg';
 import tucan from '../assets/images/art/Tucan.jpg';
 import yoshi from '../assets/images/art/Yoshi.jpg';
 
-export default function Art() {
+
+export default function About() {
   const [popupImage, setPopupImage] = useState(null);
 
   const openPopup = (imageSrc) => {
@@ -46,15 +47,18 @@ export default function Art() {
     >
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
+        <div className='page_header'>
+          <h1>Art</h1>
+        </div>
+
         <div className='flex-container'>
           <Row>
             <section className="info">
-              <div className='info_header'>Art</div>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
             </section>
           </Row>

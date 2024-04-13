@@ -1,32 +1,31 @@
 html,
 body {
-  overflow: hidden;
+  font-family: "Lato", "Calibri", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Lato", "Calibri", sans-serif;
+  overflow: hidden;
   color: #1b1b1b;
   background-color: #e9dece;
 }
 
-.flex-container {
-  display: flex;           
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .invert_theme {
+  overflow: scroll;
   color: #e9dece;
   background-color: #1b1b1b;
 }
 
-.top_shadow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px; /* Adjust the height of the shadow as needed */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
-  z-index: 2; /* Ensure the shadow appears above other elements */
+header h1 {
+  font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 7rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 38rem;
 }

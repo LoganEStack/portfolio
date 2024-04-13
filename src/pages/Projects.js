@@ -16,15 +16,16 @@ export default function Projects() {
     >
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
-        <div className='flex-container'>
-          <section className="info">
-            <div className='info_header'>Projects</div>
+        <div className='page_header'>
+          <h1>Projects</h1>
+        </div>
+
+        <div className='flex-container project_spacing'>
+          <section className="info_project">
             <Row>
-              <Col s={6}>
+              <Col md={6} className='project'>
                 <div className='info_subheader'>picture_book</div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                >
+                <motion.div whileHover={{ scale: 1.05 }} >
                   <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
                     <img className='project_image' src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
                   </a>
@@ -35,21 +36,18 @@ export default function Projects() {
                   topic modeling to determine the central theme of each page.
                 </p>
               </Col>
-              <Col s={6}>
-                <div className='info_subheader'>some other project</div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }}
-                >
+              
+              <Col md={6} className='project'>
+                <div className='info_subheader'>picture_book</div>
+                <motion.div whileHover={{ scale: 1.05 }} >
                   <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
                     <img className='project_image' src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
                   </a>
                 </motion.div>
                 <ProjectLinks url={"https://github.com/LoganEStack/picture_book"} />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  A program that adds AI generated illustrations to books by using
+                  topic modeling to determine the central theme of each page.
                 </p>
               </Col>
             </Row>

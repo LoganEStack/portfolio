@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
 
-export default function About() {
+export default function Work() {
   return (
     <motion.div
       initial={{ y: '100vh' }}
@@ -15,14 +13,17 @@ export default function About() {
     >
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
+        <div className='page_header'>
+          <h1>Work</h1>
+        </div>
+
         <div className='flex-container'>
           <section className="info">
-            <div className='info_header'>Work</div>
             <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
               <div className='info_subheader'>General Motors</div>
             </a>
             <div className='info_subtext'>Software Engineer (2022-Present)</div>
-            <p>
+            <p style={{'padding-bottom': '0'}}>
               I write software to analyze image quality for the cameras on GM's autonomous vehicles.
             </p>
             <div className='info_subtext'>DevOps Engineer (2019-2022)</div>

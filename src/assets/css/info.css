@@ -1,22 +1,32 @@
-.info {
-    width: 66ch;
+.page_header {
+    width: 100%;
+    margin-top: 9rem;
+    display: flex;
+}
+
+.page_header h1 {
+    font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6rem;
+    display: inline-block;
     margin: 0 auto;
+}
+
+.info {
+    max-width: 66ch;
     position: relative;
     font-size: 1rem;
     text-align: center;
 }
 
-.info_header {
-    font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-bottom: 4rem;
-    font-size: 6rem;
-}
-
 .info_subheader {
-    padding: 2rem 0 1rem 0;
+    padding: 0 0 .5rem 0;
     font-size: 2rem;
 }
 
 .info_subtext {
     color:#a0a0a0;
+}
+
+.info p {
+    padding-bottom: 1.5rem;
 }

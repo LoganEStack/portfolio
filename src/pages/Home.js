@@ -13,8 +13,8 @@ export default function Home() {
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
       <Container fluid className="vh-100">
-        <div className='flex-container'>
-          <header>Logan Stack</header>
+        <div className='flex-container' style={{'height':'100%'}}>
+          <header><h1>Logan Stack</h1></header>
           <Navigation />
           <SocialLinks />
         </div>
