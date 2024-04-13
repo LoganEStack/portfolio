@@ -61,6 +61,6 @@ nav ul li {
 
 @media (max-height : 700px) {
     #back_arrow {
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
 }
