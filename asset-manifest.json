@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.e23f2bea.css",
-    "main.js": "./static/js/main.dccb9576.js",
+    "main.css": "./static/css/main.3093d696.css",
+    "main.js": "./static/js/main.8c084312.js",
     "static/js/592.6d7de513.chunk.js": "./static/js/592.6d7de513.chunk.js",
     "static/media/Six Shooter.png": "./static/media/Six Shooter.f7959384fe0a036ba07f.png",
     "static/media/T-Rex Moped.png": "./static/media/T-Rex Moped.d0f9ee5c0c37221801d7.png",
@@ -29,12 +29,12 @@
     "static/media/arrow.svg": "./static/media/arrow.e63dcbe63e9d75ab1e41f0a6760d88b4.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.7aa36a7c0bd86e3a0bf5f14a7f79c3e5.svg",
     "static/media/mail.svg": "./static/media/mail.c06326222debe545efe2c1648d11486f.svg",
-    "main.e23f2bea.css.map": "./static/css/main.e23f2bea.css.map",
-    "main.dccb9576.js.map": "./static/js/main.dccb9576.js.map",
+    "main.3093d696.css.map": "./static/css/main.3093d696.css.map",
+    "main.8c084312.js.map": "./static/js/main.8c084312.js.map",
     "592.6d7de513.chunk.js.map": "./static/js/592.6d7de513.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e23f2bea.css",
-    "static/js/main.dccb9576.js"
+    "static/css/main.3093d696.css",
+    "static/js/main.8c084312.js"
   ]
 }
