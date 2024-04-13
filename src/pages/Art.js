@@ -25,7 +25,6 @@ import toys from '../assets/images/art/Toys.jpg';
 import tucan from '../assets/images/art/Tucan.jpg';
 import yoshi from '../assets/images/art/Yoshi.jpg';
 
-
 export default function About() {
   const [popupImage, setPopupImage] = useState(null);
 
@@ -53,10 +52,13 @@ export default function About() {
           <Row>
             <section className="info">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Creativity is a big part of my life. I love to excercise my skills through a variety of 
+                mediums; predominantly arcylic and pen and ink. This is a catalog of many of my pieces 
+                over the past few years. It ranges broadly in terms of both subject and quality. Very 
+                rarely am I actually making anything for myself, though. I tend to just paint whatever 
+                I think my friends might like because it makes them smile. A lot of the works in here 
+                are directly inspired by existing works, as requested by friends. I don't claim any form 
+                of authorship of those pieces. Take a look around and please let me know what you think!
               </p>
             </section>
           </Row>
