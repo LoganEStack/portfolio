@@ -1,3 +1,9 @@
+/* Display */
+.art_section {
+    justify-content: center;
+    width: 80%;
+}
+
 /* Images */
 .artwork {
     padding: 2rem;

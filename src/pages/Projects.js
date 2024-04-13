@@ -16,9 +16,7 @@ export default function Projects() {
     >
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
-        <div className='page_header'>
-          <h1>Projects</h1>
-        </div>
+        <div className='page_header'><h1>Projects</h1></div>
 
         <div className='flex-container project_spacing'>
           <section className="info_project">

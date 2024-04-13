@@ -13,9 +13,7 @@ export default function Work() {
     >
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
-        <div className='page_header'>
-          <h1>Work</h1>
-        </div>
+        <div className='page_header'><h1>Work</h1></div>
 
         <div className='flex-container'>
           <section className="info">

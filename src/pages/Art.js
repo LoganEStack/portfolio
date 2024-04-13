@@ -47,9 +47,7 @@ export default function About() {
     >
       <Container fluid className="vh-100 invert_theme">
         <BackArrow />
-        <div className='page_header'>
-          <h1>Art</h1>
-        </div>
+        <div className='page_header'><h1>Art</h1></div>
 
         <div className='flex-container'>
           <Row>
@@ -62,7 +60,7 @@ export default function About() {
               </p>
             </section>
           </Row>
-          <Row>
+          <Row className='art_section'>
             <Row>
               <Col>
                 <Artwork src={bill_murray} alt="Bill Murray art" openPopup={openPopup} />

@@ -33,8 +33,9 @@ nav ul li {
 #back_arrow {
     display: block;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 2rem;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: 2rem;
     height: auto;
     color: #c9b76f;
