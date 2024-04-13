@@ -58,9 +58,3 @@ nav ul li {
         font-weight: normal;
     }
 }
-
-@media (max-height : 700px) {
-    #back_arrow {
-        margin-top: 3rem;
-    }
-}
