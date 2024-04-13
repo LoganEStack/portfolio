@@ -4,6 +4,12 @@
     width: 100%;
 }
 
+@media (max-height : 700px) {
+    .page_header {
+        margin-top: 5rem;
+    }
+}
+
 .page_header h1 {
     font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 6rem;
@@ -24,7 +30,7 @@
 }
 
 .info_subtext {
-    color:#a0a0a0;
+    color: #a0a0a0;
 }
 
 .info p {
