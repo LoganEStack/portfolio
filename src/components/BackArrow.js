@@ -13,7 +13,7 @@ export default function About() {
         },
       }}
     >
-      <NavLink exact to="/">
+      <NavLink to="/">
         <Arrow id="back_arrow" />
       </NavLink>
     </motion.div>

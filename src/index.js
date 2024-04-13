@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './App.css';
-import './assets/css/about.css';
 import './assets/css/art.css';
 import './assets/css/info.css';
 import './assets/css/navigation.css';

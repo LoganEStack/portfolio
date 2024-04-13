@@ -63,39 +63,86 @@ export default function About() {
             </section>
           </Row>
           <Row>
-            <Col>
-              <div className="artwork_scroll_box">
-                <div class="scrollbar" id="scrollbar1">
-                  <Artwork src={bill_murray} alt="Bill Murray art" openPopup={openPopup} />
-                  <Artwork src={bird_with_arms} alt="bird with arms art" openPopup={openPopup} />
-                  <Artwork src={two_piece_abstract} alt="two piece abstract art" openPopup={openPopup} />
-                  <Artwork src={three_piece_abstract} alt="three piece abstract art" openPopup={openPopup} />
-                  <Artwork src={chaplin} alt="Chaplin art" openPopup={openPopup} />
-                  <Artwork src={dog_tags} alt="dog_tags drawing" openPopup={openPopup} />
-                  <Artwork src={dog} alt="dog drawing" openPopup={openPopup} />
-                  <Artwork src={dragonball} alt="dragonball drawing" openPopup={openPopup} />
-                  <Artwork src={fireball} alt="fireball drawing" openPopup={openPopup} />
-                  <Artwork src={flower} alt="flower drawing" openPopup={openPopup} />
-                  <Artwork src={gorilla} alt="gorilla drawing" openPopup={openPopup} />
-                  <Artwork src={nachopus} alt="nachopus drawing" openPopup={openPopup} />
-                  <Artwork src={six_shooter} alt="six_shooter drawing" openPopup={openPopup} />
-                  <Artwork src={spiderman} alt="spiderman drawing" openPopup={openPopup} />
-                  <Artwork src={trex} alt="trex drawing" openPopup={openPopup} />
-                  <Artwork src={toys} alt="toys drawing" openPopup={openPopup} />
-                  <Artwork src={tucan} alt="tucan drawing" openPopup={openPopup} />
-                  <Artwork src={yoshi} alt="yoshi drawing" openPopup={openPopup} />
-                  <Artwork src={bill_murray} alt="" openPopup={openPopup} />
-                  {popupImage && (
-                    <div className="popup-overlay" onClick={closePopup}>
-                      <div className="popup-content">
-                        <img src={popupImage} alt="Popup" />
-                      </div>
-                    </div>
-                  )}
-
+            <Row>
+              <Col>
+                <Artwork src={bill_murray} alt="Bill Murray art" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={bird_with_arms} alt="bird with arms art" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={two_piece_abstract} alt="two piece abstract art" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={three_piece_abstract} alt="three piece abstract art" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={chaplin} alt="Chaplin art" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={dog_tags} alt="dog_tags drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={dog} alt="dog drawing" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={dragonball} alt="dragonball drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={fireball} alt="fireball drawing" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={flower} alt="flower drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={gorilla} alt="gorilla drawing" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={nachopus} alt="nachopus drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={six_shooter} alt="six_shooter drawing" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={spiderman} alt="spiderman drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={trex} alt="trex drawing" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={toys} alt="toys drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={tucan} alt="tucan drawing" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={yoshi} alt="yoshi drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            
+            {popupImage && (
+              <div className="popup-overlay" onClick={closePopup}>
+                <div className="popup-content">
+                  <img src={popupImage} alt="Popup" />
                 </div>
               </div>
-            </Col>
+            )}
           </Row>
         </div>
       </Container>

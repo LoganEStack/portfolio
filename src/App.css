@@ -29,3 +29,7 @@ header h1 {
   align-items: center;
   min-height: 38rem;
 }
+
+.aaa {
+  display: block;
+}

@@ -23,7 +23,7 @@ export default function Work() {
               <div className='info_subheader'>General Motors</div>
             </a>
             <div className='info_subtext'>Software Engineer (2022-Present)</div>
-            <p style={{'padding-bottom': '0'}}>
+            <p style={{'paddingBottom': '0'}}>
               I write software to analyze image quality for the cameras on GM's autonomous vehicles.
             </p>
             <div className='info_subtext'>DevOps Engineer (2019-2022)</div>
