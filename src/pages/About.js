@@ -15,13 +15,13 @@ export default function About() {
         <BackArrow />
         <div className='page_header'><h1>About</h1></div>
         <div className='flex-container'>
-          <section className="info">
+          <section className="info info_about">
             <div className='info_subheader'><h2>Hi, I'm Logan.</h2></div>
             <p>
               I'm a software engineer based in Detroit, MI with a passion for creativity.
               I'm currently employed at General Motors, where I write software to test the cameras that go
               into our vehicles. I love all things imaginative and try to find that spark where ever I can 
-              in my work and life. Please send me an email if you'd like to chat!
+              in my work and life. <br></br>Please send me an email if you'd like to chat!
             </p>
           </section>
         </div>
