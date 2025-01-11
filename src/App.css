@@ -32,6 +32,16 @@ header h1 {
   min-height: 70vh;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #1b1b1b;
+  background: #fc9797;
+}
+
+::selection {
+  color: #1b1b1b;
+  background: #fc9797;
+}
+
 @media (max-height : 700px) {
   .flex-container {
     min-height: 25rem;

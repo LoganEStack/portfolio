@@ -46,12 +46,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 .popup-content img {
-    width: 60vh;
+    width: 100%;
     height: auto;
+    max-width: 80vw;  /* Ensure the image does not exceed 80% of the viewport width */
+    max-height: 80vh; /* Ensure the image does not exceed 80% of the viewport height */
     border-radius: 10px;
+    object-fit: contain; /* This ensures the aspect ratio is maintained */
 }

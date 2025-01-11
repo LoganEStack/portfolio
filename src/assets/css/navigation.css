@@ -4,7 +4,8 @@ a {
 }
 
 a:hover {
-    color: #d8cb97;
+    color: #9a0000;
+    transition: color 0.5s ease;
 }
 
 nav {
@@ -38,12 +39,12 @@ nav ul li {
     transform: translate(-50%, -50%);
     width: 2rem;
     height: auto;
-    color: #c9b76f;
+    color: #fc7575;
     z-index: 10;
 }
 
 #back_arrow:hover {
-    color: #d8cb97;
+    color: #fc9797;
 }
 
 @media (max-width : 508px) {

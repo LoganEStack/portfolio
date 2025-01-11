@@ -6,24 +6,30 @@ import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
 import Artwork from '../components/Artwork'
 
-import two_piece_abstract from '../assets/images/art/2 Piece Abstract.jpg';
-import three_piece_abstract from '../assets/images/art/3 Piece Abstract.jpg';
-import bill_murray from '../assets/images/art/Bill Murray.jpg';
-import bird_with_arms from '../assets/images/art/Bird with Arms.jpg';
-import chaplin from '../assets/images/art/Chaplin.png';
-import dog_tags from '../assets/images/art/Dog Tags.png';
-import dog from '../assets/images/art/Dog.jpg';
-import dragonball from '../assets/images/art/Dragonball.jpg';
-import fireball from '../assets/images/art/Fireball.jpg';
+import two_piece_abstract from '../assets/images/art/two_piece_abstract.jpg';
+import three_piece_abstract from '../assets/images/art/three_piece_abstract.jpg';
+import bill_murray from '../assets/images/art/bill_murray.jpg';
+import bird_with_arms from '../assets/images/art/bird_with_arms.jpg';
+import chaplin from '../assets/images/art/chaplin.png';
+import dog_tags from '../assets/images/art/dog_tags.png';
+import dog from '../assets/images/art/dog.jpg';
+import dragonball from '../assets/images/art/dragonball.jpg';
+import fireball from '../assets/images/art/fireball.jpg';
 import flower from '../assets/images/art/flower.jpg';
-import gorilla from '../assets/images/art/Gorilla.png';
-import nachopus from '../assets/images/art/Nachopus.jpg';
-import six_shooter from '../assets/images/art/Six Shooter.png';
-import spiderman from '../assets/images/art/Spiderman vs Wolverine.jpg';
-import trex from '../assets/images/art/T-Rex Moped.png';
-import toys from '../assets/images/art/Toys.jpg';
-import tucan from '../assets/images/art/Tucan.jpg';
-import yoshi from '../assets/images/art/Yoshi.jpg';
+import gorilla from '../assets/images/art/gorilla.png';
+import nachopus from '../assets/images/art/nachopus.jpg';
+import six_shooter from '../assets/images/art/six_shooter.png';
+import spiderman from '../assets/images/art/spiderman_wolverine.jpg';
+import trex from '../assets/images/art/trex_moped.png';
+import toys from '../assets/images/art/toys.jpg';
+import tucan from '../assets/images/art/tucan.jpg';
+import yoshi from '../assets/images/art/yoshi.jpg';
+import black_bowl from '../assets/images/art/black_bowl.jpg';
+import green_cup from '../assets/images/art/green_cup.jpg';
+import orange_bowl from '../assets/images/art/orange_bowl.jpg';
+import orange_vase from '../assets/images/art/orange_vase.jpg';
+import red_bowl from '../assets/images/art/red_bowl.jpg';
+import white_cup from '../assets/images/art/white_cup.jpg';
 
 export default function About() {
   const [popupImage, setPopupImage] = useState(null);
@@ -52,7 +58,7 @@ export default function About() {
           <section className="info">
             <p style={{'paddingTop': '2rem'}}>
               Creativity is a big part of my life. I love to excercise my skills through a variety of
-              mediums; predominantly arcylic and pen and ink. This is a catalog of many of my pieces
+              mediums; predominantly pottery, arcylic, and pen & ink. This is a catalog of many of my pieces
               over the past few years. It ranges broadly in terms of both subject and quality. Very
               rarely am I actually making anything for myself, though. I tend to just paint whatever
               I think my friends might like because it makes them smile. A lot of the works in here
@@ -131,6 +137,30 @@ export default function About() {
               </Col>
               <Col>
                 <Artwork src={yoshi} alt="yoshi drawing" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={black_bowl} alt="black bowl" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={orange_bowl} alt="orange bowl" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={green_cup} alt="green cup" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={white_cup} alt="white cup" openPopup={openPopup} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Artwork src={red_bowl} alt="red bowl" openPopup={openPopup} />
+              </Col>
+              <Col>
+                <Artwork src={orange_vase} alt="orange vase" openPopup={openPopup} />
               </Col>
             </Row>
 
