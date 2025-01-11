@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.182e2cf1.css",
-    "main.js": "./static/js/main.d5058f17.js",
+    "main.js": "./static/js/main.16f7d839.js",
     "static/js/592.6d7de513.chunk.js": "./static/js/592.6d7de513.chunk.js",
     "static/media/six_shooter.png": "./static/media/six_shooter.d3a3b37d0a7924e6672f.png",
     "static/media/chaplin.png": "./static/media/chaplin.1f628d57e98aa0abfe67.png",
     "static/media/gorilla.png": "./static/media/gorilla.e5d102f10c0df139317e.png",
     "static/media/trex_moped.png": "./static/media/trex_moped.16b3372e333b2972ab0f.png",
-    "static/media/picture_book.png": "./static/media/picture_book.d605fe8481bba7cb5936.png",
     "static/media/bird_with_arms.jpg": "./static/media/bird_with_arms.6cdada60753f0db57652.jpg",
     "static/media/dog_tags.png": "./static/media/dog_tags.196ad95cbbe3261d45ce.png",
     "static/media/dragonball.jpg": "./static/media/dragonball.6d8c49f1be3e304a46a8.jpg",
@@ -30,6 +29,7 @@
     "static/media/orange_bowl_small.jpg": "./static/media/orange_bowl_small.1e2eaaccb6c571165ce5.jpg",
     "static/media/yoshi.jpg": "./static/media/yoshi.a673865509b942d3b2fb.jpg",
     "static/media/spiderman_wolverine_small.jpg": "./static/media/spiderman_wolverine_small.c488d4d8420535ac46d9.jpg",
+    "static/media/picture_book.png": "./static/media/picture_book.03769ab7b059196dd362.png",
     "static/media/black_bowl_small.jpg": "./static/media/black_bowl_small.9352874445e09481e5b6.jpg",
     "static/media/nachopus_small.jpg": "./static/media/nachopus_small.199dcf0a6184e38bb601.jpg",
     "static/media/green_cup_small.jpg": "./static/media/green_cup_small.2fb31ce4d8148ca3c8c5.jpg",
@@ -59,11 +59,11 @@
     "static/media/linkedin.svg": "./static/media/linkedin.7aa36a7c0bd86e3a0bf5f14a7f79c3e5.svg",
     "static/media/mail.svg": "./static/media/mail.c06326222debe545efe2c1648d11486f.svg",
     "main.182e2cf1.css.map": "./static/css/main.182e2cf1.css.map",
-    "main.d5058f17.js.map": "./static/js/main.d5058f17.js.map",
+    "main.16f7d839.js.map": "./static/js/main.16f7d839.js.map",
     "592.6d7de513.chunk.js.map": "./static/js/592.6d7de513.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.182e2cf1.css",
-    "static/js/main.d5058f17.js"
+    "static/js/main.16f7d839.js"
   ]
 }
