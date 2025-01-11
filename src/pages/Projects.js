@@ -25,7 +25,7 @@ export default function Projects() {
                 <div className='info_subheader'><h2>picture_book</h2></div>
                 <motion.div whileHover={{ scale: 1.05 }} >
                   <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
-                    <img className='project_image' src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
+                    <img className='project_image' loading="lazy" src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
                   </a>
                 </motion.div>
                 <ProjectLinks url={"https://github.com/LoganEStack/picture_book"} />
@@ -39,7 +39,7 @@ export default function Projects() {
                 <div className='info_subheader'><h2>cs_compendium</h2></div>
                 <motion.div whileHover={{ scale: 1.05 }} >
                   <a href="https://github.com/LoganEStack/cs_compendium" target="_blank" rel="noopener noreferrer">
-                    <img className='project_image' src={require("../assets/images/projects/cs_compendium.png")} alt="cs_compendium" width="500" height="auto" />
+                    <img className='project_image' loading="lazy" src={require("../assets/images/projects/cs_compendium.png")} alt="cs_compendium" width="500" height="auto" />
                   </a>
                 </motion.div>
                 <ProjectLinks url={"https://github.com/LoganEStack/cs_compendium"} />
