@@ -10,24 +10,13 @@
     }
 }
 
-.page_header h1 {
-    font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5rem;
-    display: inline-block;
-    margin: 0 auto;
-    position: relative;
-}
-
 /* Line break */
-.page_header h1::after {
-    content: '';
-    position: absolute;
-    bottom: -2rem; /* Distance between the text and the line */
-    left: 50%;
-    transform: translateX(-50%);
+.line_break {
+    margin: 2rem auto 0;
     width: 75%;
-    height: 3px; /* Thickness of the line */
-    background-color: #fc7575;
+    height: 3px;
+    background-color: var(--light_red);
+    display: block;
 }
 
 .info {
@@ -35,7 +24,6 @@
     position: relative;
     /* text-align: center; */
     max-width: 80ch;
-    padding-top: 5rem;
     margin: 0 1rem 0 1rem;
 }
 

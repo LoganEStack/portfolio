@@ -11,10 +11,15 @@ export default function About() {
       transition={{ duration: 0.5 }}
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
-      <Container fluid className="vh-100 invert_theme">
+      <Container fluid className="container invert_theme">
         <BackArrow />
-        <div className='page_header'><h1>About</h1></div>
-        <div className='flex-container'>
+        <div className='page_header'>
+          <h1>
+            About
+            <div className='line_break'></div>
+          </h1>
+        </div>
+        <div className='page-body'>
           <section className="info info_about">
             <div className='info_subheader'><h2>Hi, I'm Logan.</h2></div>
             <p>
@@ -25,6 +30,7 @@ export default function About() {
             </p>
           </section>
         </div>
+        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );

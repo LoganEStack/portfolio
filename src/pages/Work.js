@@ -11,17 +11,22 @@ export default function Work() {
       transition={{ duration: 0.5 }}
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
-      <Container fluid className="vh-100 invert_theme">
+      <Container fluid className="container invert_theme">
         <BackArrow />
-        <div className='page_header'><h1>Work</h1></div>
+        <div className='page_header'>
+          <h1>
+            Work
+            <div className='line_break'></div>
+          </h1>
+        </div>
 
-        <div className='flex-container'>
+        <div className='page-body'>
           <section className="info">
             <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
               <div className='info_subheader'><h2>General Motors</h2></div>
             </a>
             <div className='info_subtext'>Software Engineer (2022-Present)</div>
-            <p style={{'paddingBottom': '0'}}>
+            <p style={{ 'paddingBottom': '0' }}>
               I write software to analyze image quality for the cameras on GM's autonomous vehicles.
             </p>
             <div className='info_subtext'>DevOps Engineer (2019-2022)</div>
@@ -45,6 +50,7 @@ export default function Work() {
             </p>
           </section>
         </div>
+        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );

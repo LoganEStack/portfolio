@@ -11,11 +11,16 @@ export default function About() {
       transition={{ duration: 0.5 }}
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
-      <Container fluid className="vh-100 invert_theme">
+      <Container fluid className="container invert_theme">
         <BackArrow />
-        <div className='page_header'><h1>404</h1></div>
-        <div className='flex-container'>
-          <section className="info" style={{'max-width': '70ch'}}>
+        <div className='page_header'>
+          <h1>
+            404
+            <div className='line_break'></div>
+          </h1>
+        </div>
+        <div className='page-body'>
+          <section className="info" style={{ 'max-width': '70ch' }}>
             <div className='info_subheader'>
               <h2>
                 Page not found. Click the up arrow at the top of the screen to go
@@ -24,6 +29,7 @@ export default function About() {
             </div>
           </section>
         </div>
+        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );

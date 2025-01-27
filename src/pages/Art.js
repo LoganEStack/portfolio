@@ -74,13 +74,18 @@ export default function About() {
       transition={{ duration: 0.5 }}
       style={{ position: 'absolute', top: 0, left: 0, right: 0 }}
     >
-      <Container fluid className="vh-100 invert_theme">
+      <Container fluid className="container invert_theme">
         <BackArrow />
-        <div className='page_header'><h1>Art</h1></div>
+        <div className='page_header'>
+          <h1>
+            Art
+            <div className='line_break'></div>
+          </h1>
+        </div>
 
-        <div className='flex-container'>
+        <div className='page-body'>
           <section className="info">
-            <p style={{'paddingTop': '2rem'}}>
+            <p style={{'paddingTop': '5rem'}}>
               Creativity is a big part of my life. I love to excercise my skills through a variety of
               mediums; predominantly pottery, arcylic, and pen & ink. This is a catalog of many of my pieces
               over the past few years. It ranges broadly in terms of both subject and quality. Very
@@ -197,6 +202,7 @@ export default function About() {
             )}
           </Row>
         </div>
+        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );
