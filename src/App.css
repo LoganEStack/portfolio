@@ -6,14 +6,14 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  color: #1b1b1b;
-  background-color: #e9dece;
+  color: var(--off_black);
+  background-color: var(--off_white);
 }
 
 .invert_theme {
   overflow: auto;
-  color: #e9dece;
-  background-color: #1b1b1b;
+  color: var(--off_white);
+  background-color: var(--off_black);
 }
 
 header h1 {
@@ -33,13 +33,13 @@ header h1 {
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: #1b1b1b;
-  background: #fc9797;
+  color: var(--off_black);
+  background: var(--lighter_red);
 }
 
 ::selection {
-  color: #1b1b1b;
-  background: #fc9797;
+  color: var(--off_black);
+  background: var(--lighter_red);
 }
 
 @media (max-height : 700px) {
