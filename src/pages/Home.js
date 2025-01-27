@@ -18,6 +18,7 @@ export default function Home() {
           <Navigation />
           <SocialLinks />
         </div>
+        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );

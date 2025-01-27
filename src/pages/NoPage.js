@@ -24,6 +24,7 @@ export default function About() {
             </div>
           </section>
         </div>
+        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );
