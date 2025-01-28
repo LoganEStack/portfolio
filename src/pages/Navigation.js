@@ -4,7 +4,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav>
+      <nav id="home-nav">
         <ul>
           <li>
             <NavLink to="/about" className={({ isActive }) => isActive ? "nav_active" : ""}>About</NavLink>

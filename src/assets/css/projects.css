@@ -1,14 +1,3 @@
-.project_spacing {
-    margin-top: 5rem;
-    justify-content: flex-start;
-}
-
-.info_project {
-    position: relative;
-    font-size: 1rem;
-    text-align: center;
-}
-
 .project {
     display: flex;
     flex-direction: column;
