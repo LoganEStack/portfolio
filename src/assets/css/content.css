@@ -56,8 +56,11 @@
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 487px) {
     .content, .content_project {
         padding-bottom: 4rem;
+    }
+    .line_break {
+        margin-bottom: 3rem;
     }
 }

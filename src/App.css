@@ -105,3 +105,10 @@ body {
     scrollbar-color: var(--dark_red) var(--off_white);
   }
 }
+
+/* Media Queries */
+@media (max-width: 487px) {
+  .page-footer {
+    padding-bottom: 8rem;
+  }
+}

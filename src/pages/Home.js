@@ -22,7 +22,6 @@ export default function Home() {
           </div>
           <div className="page-footer"><p>© 2025 Logan Stack</p></div>
         </div>
-        <div className="page-footer">© 2025 Logan Stack</div>
       </Container>
     </motion.div>
   );
