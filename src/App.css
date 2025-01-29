@@ -28,6 +28,7 @@ body {
 
 .page-body {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   margin-bottom: auto;
   justify-content: center;
