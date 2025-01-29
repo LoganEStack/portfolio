@@ -27,7 +27,7 @@ nav ul li {
     padding: 1.5vw;
 }
 
-#links a {
+#home-links a {
     padding: .5rem;
 }
 
@@ -48,12 +48,13 @@ nav ul li {
 }
 
 @media (max-width : 508px) {
-    nav { 
+    nav {
         padding: 20px 0;
         border-top: 1px solid #9c9c9c;
         border-bottom: 1px solid #9c9c9c;
         width: 80%;
     }
+
     nav ul li {
         font-size: 1.5rem;
         font-weight: normal;

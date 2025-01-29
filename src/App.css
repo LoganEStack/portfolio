@@ -1,52 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+/* Base styles */
 html,
 body {
   font-family: "Lato", "Calibri", sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   color: var(--off_black);
   background-color: var(--off_white);
-  height: 100%;
+  overflow: hidden;
 }
 
-.invert_theme {
-  overflow: auto;
+/* Inversion of color scheme */
+.invert-theme {
   color: var(--off_white);
   background-color: var(--off_black);
 }
 
-header h1 {
-  font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 5rem;
-  font-weight: bold;
-  line-height: 7rem;
-  text-align: center;
-}
-
-.flex-container {
+/* Page sections */
+.page-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  min-height: calc(100vh - 14rem); /* Adjust for header and footer space */
-  padding: 2rem 1rem; /* Add padding for better spacing */
-  max-width: 100%; /* Ensure it doesn't overflow horizontally */
-  box-sizing: border-box; /* Include padding in height/width calculations */
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 .page-footer {
-  position: absolute; /* Position the footer at the bottom */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Ensure the footer spans the entire width */
   text-align: center;
-  opacity: 0.6;
-  padding: 1rem 0; /* Add padding for better spacing */
+  opacity: .5;
 }
 
-::-moz-selection { /* Code for Firefox */
+/* Scrollable content wrapper */
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Selection styling */
+::-moz-selection {
   color: var(--off_black);
   background: var(--lighter_red);
 }
@@ -56,9 +62,45 @@ header h1 {
   background: var(--lighter_red);
 }
 
-@media (max-height : 700px) {
-  .flex-container {
-    min-height: 25rem;
-    padding-bottom: 5rem;
+/* WebKit (Chrome, Safari, Edge) Scrollbar Styling */
+.scroll-wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+  background: var(--off_black);
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--light_red);
+  border-radius: 6px;
+  border: 4px solid var(--off_black);
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lighter_red);
+}
+
+/* Scrollbar styling (home) */
+.scroll-wrapper-home::-webkit-scrollbar-track {
+  background: var(--off_white);
+}
+
+.scroll-wrapper-home::-webkit-scrollbar-thumb {
+  background-color: var(--dark_red);
+  border: 4px solid var(--off_white);
+}
+
+.scroll-wrapper-home::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light_red);
+}
+
+@-moz-document url-prefix() {
+  .scroll-wrapper {
+    scrollbar-color: var(--light_red) var(--off_black);
+  }
+
+  .scroll-wrapper-home {
+    scrollbar-color: var(--dark_red) var(--off_white);
   }
 }

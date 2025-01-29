@@ -53,8 +53,8 @@
 .popup-content img {
     width: 100%;
     height: auto;
-    max-width: 80vw;  /* Ensure the image does not exceed 80% of the viewport width */
-    max-height: 80vh; /* Ensure the image does not exceed 80% of the viewport height */
+    max-width: 80vw;
+    max-height: 80vh;
     border-radius: 10px;
-    object-fit: contain; /* This ensures the aspect ratio is maintained */
+    object-fit: contain;
 }
