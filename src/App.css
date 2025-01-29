@@ -104,12 +104,3 @@ body {
     scrollbar-color: var(--dark_red) var(--off_white);
   }
 }
-
-
-/* Media queries */
-/* @media (max-height: 700px) {
-  .flex-container {
-    min-height: 25rem;
-    padding-bottom: 5rem;
-  }
-} */
