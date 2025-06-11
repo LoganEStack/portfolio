@@ -58,10 +58,6 @@ import white_cup_small from '../assets/images/art/white_cup_small.jpg';
 export default function Art() {
   const [popupImage, setPopupImage] = useState(null);
 
-  const openPopup = (imageSrc) => {
-    setPopupImage(imageSrc);
-  };
-
   const closePopup = () => {
     setPopupImage(null);
   };
@@ -85,15 +81,19 @@ export default function Art() {
           </div>
 
           <div className='page-body'>
-            <section className="content">
+            <section className="content content_art">
               <p>
                 Creativity is a big part of my life. I love to excercise my skills through a variety of
-                mediums; predominantly pottery, arcylic, and pen & ink. This is a catalog of many of my pieces
-                over the past few years. It ranges broadly in terms of both subject and quality. Very
-                rarely am I actually making anything for myself, though. I tend to just paint whatever
-                I think my friends might like because it makes them smile. A lot of the works in here
-                are directly inspired by existing works, as requested by friends. I don't claim any form
-                of authorship of those pieces. Take a look around and please let me know what you think!
+                mediums; predominantly pottery, arcylic, and pen & ink. 
+              </p>
+              <p>
+                This is a catalog of many of my pieces over the past few years. It ranges broadly in terms 
+                of both subject and quality. I tend to just paint whatever I think might make my friends happy.
+              </p>
+              <p>
+                A lot of the works in here are directly inspired by or recreations of existing works, as 
+                requested by friends. I don't claim any form of authorship of those pieces. 
+                Take a look around and please let me know what you think!
               </p>
             </section>
             <Row className='art_section'>

@@ -28,12 +28,12 @@ export default function Work() {
               </a>
               <div className='content_subtext'>Software Engineer (2022-Present)</div>
               <p style={{ 'paddingBottom': '0' }}>
-                I write software to analyze image quality for the cameras on GM's autonomous vehicles.
+                I write software to determine the best camera hardware to use on our vehicles.
               </p>
               <div className='content_subtext'>DevOps Engineer (2019-2022)</div>
               <p>
-                I worked on the automation of build and testing software for the code residing in
-                60 individual Electronic Control Units for the Vehicles and Embedded Controls division.
+                I worked on the release portion of the CI/CD pipeline for all Electronic Control Units
+                in GM's Vehicle Motion and Embedded Controls division.
               </p>
               <a href="https://www.michelin.com/" target="_blank" rel="noopener noreferrer">
                 <div className='content_subheader'><h2>Michelin</h2></div>

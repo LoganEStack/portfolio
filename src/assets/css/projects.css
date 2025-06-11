@@ -1,7 +1,6 @@
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 1rem 3rem;
 }
@@ -19,4 +18,11 @@
     user-drag: none;
     -webkit-user-drag: none;
     -moz-user-drag: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.project_image:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }

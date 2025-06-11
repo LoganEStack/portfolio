@@ -30,10 +30,13 @@ export default function About() {
             <section className="content content_about">
               <div className='content_subheader'><h2>Hi, I'm Logan.</h2></div>
               <p>
-                I'm a software engineer based in Detroit, MI with a passion for creativity.
+                I'm a software engineer based in Detroit, MI with a passion for creativity.<br></br>
                 I'm currently employed at General Motors, where I write software to test the cameras that go
                 into our vehicles. I love all things imaginative and try to find that spark where ever I can
-                in my work and life. <br></br>Please send me an email if you'd like to chat!
+                in my work and life.
+              </p>
+              <p>
+                Please send me an email if you'd like to chat!
               </p>
             </section>
           </div>
