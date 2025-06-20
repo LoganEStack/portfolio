@@ -29,7 +29,7 @@
 
 @media (max-width: 650px) {
     .project {
-        padding: 0;
+        padding: 1rem 0;
     }
 
     .project_image {
