@@ -32,7 +32,8 @@ export default function About() {
               <p>
                 I'm a software engineer based in Detroit, MI with a passion for creativity.<br></br>
                 I'm currently employed at General Motors, where I write software to test the cameras that go
-                into our vehicles. I love all things imaginative and try to find that spark where ever I can
+                into our vehicles. <br></br>
+                I love all things imaginative and try to find that spark where ever I can
                 in my work and life.
               </p>
               <p>
