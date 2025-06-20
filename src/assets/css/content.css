@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 650px) {
-    .content_about {
+    .content {
         width: 100%;
     }
 }
