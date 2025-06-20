@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
 }
 
 .project p {
@@ -25,4 +25,15 @@
 .project_image:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
+}
+
+@media (max-width: 650px) {
+    .project {
+        padding: 0;
+    }
+
+    .project_image {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
 }
