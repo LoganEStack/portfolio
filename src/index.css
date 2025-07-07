@@ -1,9 +1,12 @@
 :root {
   --off_black: #1b1b1b;
   --off_white: #e9dece;
+  --dark_gray: #343434;
+  --light_gray: #a0a0a0;
   --dark_red: #9a0000;
   --light_red: #fc7575;
   --lighter_red: #fc9797;
+  --lightest_red: #fcb1b1;
 }
 
 body {

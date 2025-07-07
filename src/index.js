@@ -5,10 +5,12 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './App.css';
+import './assets/css/about.css';
 import './assets/css/art.css';
 import './assets/css/content.css';
 import './assets/css/home.css';
 import './assets/css/navigation.css';
+import './assets/css/work.css';
 import './assets/css/projects.css';
 
 

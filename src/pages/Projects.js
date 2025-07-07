@@ -26,55 +26,63 @@ export default function Projects() {
           <div className='page-body'>
             <section className="content_project">
               <Row>
-                <Col md={6} className='project'>
-                  <div className='content_subheader'><h2>Short Stack</h2></div>
-                  <motion.div whileHover={{ scale: 1.05 }} >
+                <Col md={6}>
+                  <motion.div whileHover={{ scale: 1.05 }}>
                     <a href="https://github.com/LoganEStack/shortstack" target="_blank" rel="noopener noreferrer">
-                      <img className='project_image' loading="lazy" src={require("../assets/images/projects/shortstack.png")} alt="short stack" width="500" height="auto" />
+                      <div className="project">
+                        <div className='content_subheader'><h2>short stack</h2></div>
+                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/shortstack.png")} alt="short stack" width="500" height="auto" />
+                        <p>
+                          A URL shortener that I made to better educate myself on standards and practices
+                          for APIs, databases, deployment, etc.
+                        </p>
+                      </div>
                     </a>
                   </motion.div>
-                  <p>
-                    A URL shortener that I made to better educate myself on standards and practices
-                    for APIs, databases, deployment, etc.
-                  </p>
                 </Col>
 
-                <Col md={6} className='project'>
-                  <div className='content_subheader'><h2>cs compendium</h2></div>
-                  <motion.div whileHover={{ scale: 1.05 }} >
+                <Col md={6}>
+                  <motion.div whileHover={{ scale: 1.05 }}>
                     <a href="https://github.com/LoganEStack/cs_compendium" target="_blank" rel="noopener noreferrer">
-                      <img className='project_image' loading="lazy" src={require("../assets/images/projects/cs_compendium.png")} alt="cs compendium" width="500" height="auto" />
+                      <div className="project">
+                        <div className='content_subheader'><h2>cs compendium</h2></div>
+                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/cs_compendium.png")} alt="cs compendium" width="500" height="auto" />
+                        <p>
+                          An overly-extensive study guide that I wrote for practicing technical interviews.
+                        </p>
+                      </div>
                     </a>
                   </motion.div>
-                  <p>
-                    An overly-extensive study guide that I wrote for practicing technical interviews.
-                  </p>
                 </Col>
               </Row>
               <Row>
-                <Col md={6} className='project'>
-                  <div className='content_subheader'><h2>connect 4</h2></div>
-                  <motion.div whileHover={{ scale: 1.05 }} >
+                <Col md={6}>
+                  <motion.div whileHover={{ scale: 1.05 }}>
                     <a href="https://github.com/LoganEStack/connect4" target="_blank" rel="noopener noreferrer">
-                      <img className='project_image' loading="lazy" src={require("../assets/images/projects/connect4.png")} alt="connect 4" width="500" height="auto" />
+                      <div className="project">
+                        <div className='content_subheader'><h2>connect 4</h2></div>
+                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/connect4.png")} alt="connect 4" width="500" height="auto" />
+                        <p>
+                          A game of connect 4 versus an artificial intelligence using the Minimax algorithm.
+                        </p>
+                      </div>
                     </a>
                   </motion.div>
-                  <p>
-                    A game of connect 4 versus an artificial intelligence using the Minimax algorithm.
-                  </p>
                 </Col>
 
-                <Col md={6} className='project'>
-                  <div className='content_subheader'><h2>picture book</h2></div>
-                  <motion.div whileHover={{ scale: 1.05 }} >
+                <Col md={6}>
+                  <motion.div whileHover={{ scale: 1.05 }}>
                     <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
-                      <img className='project_image' loading="lazy" src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
+                      <div className="project">
+                        <div className='content_subheader'><h2>picture book</h2></div>
+                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
+                        <p>
+                          A program that adds AI generated illustrations to books by using
+                          topic modeling to determine the central theme of each page.
+                        </p>
+                      </div>
                     </a>
                   </motion.div>
-                  <p>
-                    A program that adds AI generated illustrations to books by using
-                    topic modeling to determine the central theme of each page.
-                  </p>
                 </Col>
               </Row>
             </section>

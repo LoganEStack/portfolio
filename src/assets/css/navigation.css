@@ -1,3 +1,4 @@
+/* Hyperlinks */
 a {
     color: inherit;
     text-decoration: none;
@@ -8,6 +9,15 @@ a:hover {
     transition: color 0.5s ease;
 }
 
+.content a, .content_project a  {
+    color: var(--lighter_red);
+}
+
+.content a:hover, .content_project a:hover {
+    color: var(--lightest_red);
+}
+
+/* Nav */
 nav {
     line-height: 0.5rem;
     margin: 1rem 0 2rem 0;
@@ -27,10 +37,17 @@ nav ul li {
     padding: 1.5vw;
 }
 
-#home-links a {
+.text_link {
+    font-weight: bold;
+    color: var(--lighter_red);
+}
+
+/* Social icons */
+#home-social-links a {
     padding: .5rem;
 }
 
+/* Back arrow */
 #back_arrow {
     display: block;
     position: absolute;
@@ -47,6 +64,7 @@ nav ul li {
     color: var(--lighter_red);
 }
 
+/* Media queries */
 @media (max-width : 508px) {
     nav {
         padding: 20px 0;

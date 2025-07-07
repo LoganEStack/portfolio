@@ -5,7 +5,7 @@ import { ReactComponent as Resume } from '../assets/images/svg/resume.svg'
 
 export default function SocialLinks() {
   return (
-    <div id="home-links">
+    <div id="home-social-links">
       <a href="mailto:loganestack@gmail.com" title="email" target="_blank" rel="noopener noreferrer">
         <Mail width="2rem" height="100%" />
       </a>

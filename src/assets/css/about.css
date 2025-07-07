@@ -1,0 +1,44 @@
+.totoro:hover {
+    cursor: url("/src/assets/images/svg/totoro.svg"), auto;
+
+}
+
+.totoro {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.totoro span {
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+.totoro:hover span {
+    animation: totoroBounce 0.6s ease infinite alternate;
+}
+
+.totoro:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 120%;
+    height: 10px;
+    transform: translateY(-50%) scaleX(0);
+}
+
+@keyframes totoroBounce {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-5px) rotate(-2deg);
+    }
+
+    100% {
+        transform: translateY(2px) rotate(2deg);
+    }
+}

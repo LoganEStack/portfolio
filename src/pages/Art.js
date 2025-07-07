@@ -84,7 +84,7 @@ export default function Art() {
             <section className="content content_art">
               <p>
                 Creativity is a big part of my life. I love to excercise my skills through a variety of
-                mediums; predominantly pottery, arcylic, and pen & ink. 
+                mediums: predominantly pottery, arcylic, and pen & ink. 
               </p>
               <p>
                 This is a catalog of many of my pieces over the past few years. It ranges broadly in terms 
@@ -92,8 +92,7 @@ export default function Art() {
               </p>
               <p>
                 A lot of the works in here are directly inspired by or recreations of existing works, as 
-                requested by friends. I don't claim any form of authorship of those pieces. 
-                Take a look around and please let me know what you think!
+                requested by friends. I don't claim any form of authorship of those pieces.
               </p>
             </section>
             <Row className='art_section'>

@@ -1,16 +1,17 @@
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export default function Artwork({ src, src_small, alt, openPopup }) {
   return (
-    <div className='artwork'>
-      <motion.div whileHover={{ scale: 1.05 }}>
-        <img 
-          src={src_small} 
-          alt={alt} 
-          loading="lazy" 
-          onClick={() => openPopup(src)} 
-        />
-      </motion.div>
-    </div>
+    <motion.div whileHover={{ scale: 1.05 }}>
+      <div className="artwork" onClick={() => openPopup(src)}>
+        <div className="artwork-container">
+          <img
+            src={src_small}
+            alt={alt}
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </motion.div>
   );
-};
+}
