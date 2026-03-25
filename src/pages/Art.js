@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
 import Artwork from '../components/Artwork'
+import PageFooter from '../components/PageFooter'
 
 import two_piece_abstract from '../assets/images/art/two_piece_abstract.jpg';
 import two_piece_abstract_small from '../assets/images/art/two_piece_abstract_small.jpg';
@@ -81,7 +82,7 @@ export default function Art() {
           </div>
 
           <div className='page-body'>
-            <section className="content content_art">
+            <section className="content">
               <p>
                 Creativity is a big part of my life. I love to excercise my skills through a variety of
                 mediums: predominantly pottery, arcylic, and pen & ink. 
@@ -194,7 +195,7 @@ export default function Art() {
               </Row>
             </Row>
           </div>
-          <div className="page-footer"><p>© 2025 Logan Stack</p></div>
+          <PageFooter />
         </div>
 
         {popupImage && (

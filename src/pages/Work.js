@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import BackArrow from '../components/BackArrow'
+import PageFooter from '../components/PageFooter'
 
 export default function Work() {
   return (
@@ -26,10 +27,21 @@ export default function Work() {
               <motion.div whileHover={{ scale: 1.05 }}>
                 <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
                   <div className='job'>
+                    <div className='content_subheader'><h2>Justworks</h2></div>
+                    <div className='content_subtext'>Senior Software Engineer (2025-Present)</div>
+                    <p style={{ 'paddingBottom': '0' }}>
+                      Backend development for the Company Onboarding team, helping businesses register for our products and services.
+                    </p>
+                  </div>
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }}>
+                <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
+                  <div className='job'>
                     <div className='content_subheader'><h2>General Motors</h2></div>
                     <div className='content_subtext'>Software Engineer (2022-Present)</div>
                     <p style={{ 'paddingBottom': '0' }}>
-                      Writing software for the evaluation of camera hardware components using Flask (Python) and React (Javascript).
+                      Writing software to evaluate supplier hardware components for all the cameras in our vehicles.
                     </p>
                     <div className='content_subtext' style={{ "paddingTop": "1rem" }}>DevOps Engineer (2019-2022)</div>
                     <p>
@@ -63,7 +75,7 @@ export default function Work() {
               </motion.div>
             </section>
           </div>
-          <div className="page-footer"><p>© 2025 Logan Stack</p></div>
+          <PageFooter />
         </div>
       </Container>
     </motion.div>

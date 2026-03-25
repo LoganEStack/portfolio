@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .page-header h1 {
@@ -17,7 +17,7 @@
 
 /* Line break */
 .line_break {
-    margin: 2rem auto 1rem;
+    margin: 1rem auto 1rem;
     width: 75%;
     height: 3px;
     background-color: var(--light_red);
@@ -52,10 +52,6 @@
     justify-content: flex-start;
     font-size: 1rem;
     text-align: center;
-}
-
-.content_art {
-    line-height: 3rem;
 }
 
 /* Media Queries */

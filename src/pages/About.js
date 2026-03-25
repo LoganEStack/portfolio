@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import BackArrow from '../components/BackArrow'
+import PageFooter from '../components/PageFooter'
 
 export default function About() {
   return (
@@ -35,18 +36,13 @@ export default function About() {
                 I love all things imaginative and try to find that spark where ever I can in my work and life.
               </p>
               <p>
-                Currently, I'm a Software Engineer II
-                at <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer" className='text_link'>General Motors</a>,
-                where I write code to help evaluate the cameras that go into our vehicles. 
-                Picking the best hardware from a large range of suppliers can be challenging. 
-                My work measures image quality and aids in physical test set up to help make 
-                the decision as simple and as accurate as possible.
-                This largely aligns with full stack development and scripting using the 
-                React and Flask frameworks in Javascript and Python respectively.
+                Currently, I'm a Senior Software Engineer
+                at <a href="https://www.justworks.com/" target="_blank" rel="noopener noreferrer" className='text_link'>Justworks</a>,
+                where I write code to help small businesses sign up for our Payroll and PEO services.
               </p>
               <p>
                 When I'm not writing APIs or designing GUIs I'm usually hunched over a pottery wheel,
-                painting in acrylics, or practicing calligraphy. It's a goal of mine to try each art 
+                painting in watercolors, or practicing calligraphy. It's a goal of mine to try each art 
                 form at least once! I'm an avid moviegoer as well. My favorite is John Carpenter's 
                 The Thing though I have particular fondness all types of animation.
               </p>
@@ -60,7 +56,7 @@ export default function About() {
               </p>
             </section>
           </div>
-          <div className="page-footer"><p>© 2025 Logan Stack</p></div>
+          <PageFooter />
         </div>
       </Container>
     </motion.div>

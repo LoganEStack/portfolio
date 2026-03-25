@@ -1,35 +1,23 @@
 <!-- INTRODUCTION -->
-<h2 align="center">Portfolio</h3>
-  <p align="center">
-    A personal website to show off my work and personality.
-    <br />
-  </p>
-</div>
+# Portfolio
+
+A personal website that's all about me.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]][site-url]
 
-This is just a website to show off some of the work that I've done professionally and personally 
+This is a project to show off some of the work that I've done professionally and personally 
 as well as being a place to show off my personality and my artwork. You can view the live site at
 [loganstack.com][site-url]
-
-### Built With
-
-* [![React][React.js]][React-url]
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 ### Prerequisites
 
-This is a list of things to install for this project to function properly.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You juse need [Node.js](https://nodejs.org/en) for this app to run. Download it from the website or through a version manager.
 
 ### Installation
 

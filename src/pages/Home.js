@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import SocialLinks from '../components/SocialLinks';
 import Navigation from './Navigation';
+import PageFooter from '../components/PageFooter';
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
             <Navigation />
             <SocialLinks/>
           </div>
-          <div className="page-footer"><p>© 2025 Logan Stack</p></div>
+          <PageFooter />
         </div>
       </Container>
     </motion.div>

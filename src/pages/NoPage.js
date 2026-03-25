@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import BackArrow from '../components/BackArrow'
+import PageFooter from '../components/PageFooter'
 
 export default function About() {
   return (
@@ -29,7 +30,7 @@ export default function About() {
               </div>
             </section>
           </div>
-          <div className="page-footer"><p>© 2025 Logan Stack</p></div>
+          <PageFooter />
         </div>
       </Container>
     </motion.div>

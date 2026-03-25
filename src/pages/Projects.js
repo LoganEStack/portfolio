@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
+import PageFooter from '../components/PageFooter'
 
 export default function Projects() {
   return (
@@ -87,7 +88,7 @@ export default function Projects() {
               </Row>
             </section>
           </div>
-          <div className="page-footer"><p>© 2025 Logan Stack</p></div>
+          <PageFooter />
         </div>
       </Container>
     </motion.div>
