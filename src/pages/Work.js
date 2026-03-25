@@ -25,7 +25,7 @@ export default function Work() {
           <div className='page-body'>
             <section className="content">
               <motion.div whileHover={{ scale: 1.05 }}>
-                <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.justworks.com/" target="_blank" rel="noopener noreferrer">
                   <div className='job'>
                     <div className='content_subheader'><h2>Justworks</h2></div>
                     <div className='content_subtext'>Senior Software Engineer (2025-Present)</div>
