@@ -32,19 +32,17 @@ export default function About() {
               <div className='content_subheader' style={{ "paddingBottom": "2rem" }}><h2>Hi, I'm Logan.</h2></div>
               <p>
                 I'm a software engineer with a passion for creativity.
-                My goal is to making things look their best and work even better.
-                I love all things imaginative and try to find that spark where ever I can in my work and life.
+                My goal is to make things look their best and work even better.
+                I love all things imaginative and try to find that spark wherever I can in my work and life.
               </p>
               <p>
-                Currently, I'm a Senior Software Engineer
+                I've most recently worked as a Senior Software Engineer
                 at <a href="https://www.justworks.com/" target="_blank" rel="noopener noreferrer" className='text_link'>Justworks</a>,
-                where I write code to help small businesses sign up for our Payroll and PEO services.
+                where I designed systems and APIs to help small businesses sign up for Justworks' PEO and Payroll services.
               </p>
               <p>
-                When I'm not writing APIs or designing GUIs I'm usually hunched over a pottery wheel,
-                painting in watercolors, or practicing calligraphy. It's a goal of mine to try each art 
-                form at least once! I'm an avid moviegoer as well. My favorite is John Carpenter's 
-                The Thing though I have particular fondness all types of animation.
+                When I'm not pushing buttons on a keyboard I'm usually hunched over a pottery wheel,
+                painting in watercolors, or watching movies.
               </p>
               <p>
                 If you think I might be right for an opportunity, or you just want to chat about the

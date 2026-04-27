@@ -28,9 +28,9 @@ export default function Work() {
                 <a href="https://www.justworks.com/" target="_blank" rel="noopener noreferrer">
                   <div className='job'>
                     <div className='content_subheader'><h2>Justworks</h2></div>
-                    <div className='content_subtext'>Senior Software Engineer (2025-Present)</div>
+                    <div className='content_subtext'>Senior Software Engineer (2025-2026)</div>
                     <p style={{ 'paddingBottom': '0' }}>
-                      Backend development for the Company Onboarding team, helping businesses register for our products and services.
+                      Backend development for the Company Onboarding team, helping businesses register for Justworks products and services.
                     </p>
                   </div>
                 </a>
@@ -39,9 +39,9 @@ export default function Work() {
                 <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
                   <div className='job'>
                     <div className='content_subheader'><h2>General Motors</h2></div>
-                    <div className='content_subtext'>Software Engineer (2022-Present)</div>
+                    <div className='content_subtext'>Software Engineer (2022-2025)</div>
                     <p style={{ 'paddingBottom': '0' }}>
-                      Writing software to evaluate supplier hardware components for all the cameras in our vehicles.
+                      Developed software to evaluate supplier hardware components for vehicle cameras.
                     </p>
                     <div className='content_subtext' style={{ "paddingTop": "1rem" }}>DevOps Engineer (2019-2022)</div>
                     <p>
