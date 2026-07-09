@@ -49,7 +49,7 @@ export default function Projects() {
                         <div className='content_subheader'><h2>stream stack</h2></div>
                         <img className='project_image' loading="lazy" src={require("../assets/images/projects/streamstack.png")} alt="cs compendium" width="500" height="auto" />
                         <p>
-                          a video transcoding and streaming platform that converts uploaded video into adaptive-bitrate HLS.
+                          A video transcoding and streaming platform that converts uploaded videos into adaptive-bitrate HLS.
                         </p>
                       </div>
                     </a>
