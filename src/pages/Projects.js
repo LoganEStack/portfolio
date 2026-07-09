@@ -44,12 +44,12 @@ export default function Projects() {
 
                 <Col md={6}>
                   <motion.div whileHover={{ scale: 1.05 }}>
-                    <a href="https://github.com/LoganEStack/cs_compendium" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/LoganEStack/streamstack" target="_blank" rel="noopener noreferrer">
                       <div className="project">
-                        <div className='content_subheader'><h2>cs compendium</h2></div>
-                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/cs_compendium.png")} alt="cs compendium" width="500" height="auto" />
+                        <div className='content_subheader'><h2>stream stack</h2></div>
+                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/streamstack.png")} alt="cs compendium" width="500" height="auto" />
                         <p>
-                          An overly-extensive study guide that I wrote for practicing technical interviews.
+                          a video transcoding and streaming platform that converts uploaded video into adaptive-bitrate HLS.
                         </p>
                       </div>
                     </a>
@@ -80,6 +80,21 @@ export default function Projects() {
                         <p>
                           A program that adds AI generated illustrations to books by using
                           topic modeling to determine the central theme of each page.
+                        </p>
+                      </div>
+                    </a>
+                  </motion.div>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={6}>
+                  <motion.div whileHover={{ scale: 1.05 }}>
+                    <a href="https://github.com/LoganEStack/cs_compendium" target="_blank" rel="noopener noreferrer">
+                      <div className="project">
+                        <div className='content_subheader'><h2>cs compendium</h2></div>
+                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/cs_compendium.png")} alt="cs compendium" width="500" height="auto" />
+                        <p>
+                          An overly-extensive study guide that I wrote for practicing technical interviews.
                         </p>
                       </div>
                     </a>
