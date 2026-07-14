@@ -1,4 +1,3 @@
-/* Minimal editorial layout */
 .about-editorial {
     max-width: 560px;
     width: 85%;
@@ -16,11 +15,6 @@
     line-height: 1.5;
     text-align: center;
     margin: 0 0 2rem;
-}
-
-.about-lede .accent {
-    color: var(--lighter_red);
-    font-style: normal;
 }
 
 .about-rule {

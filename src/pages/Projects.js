@@ -15,28 +15,28 @@ const projects = [
   {
     title: 'short stack',
     url: 'https://github.com/LoganEStack/shortstack',
-    image: require('../assets/images/projects/shortstack.png'),
+    image: require('../assets/images/projects/shortstack_wide.png'),
     description: 'A URL shortener serving as an example of standards and practices for APIs, databases, deployment, etc.',
     tags: ['Flask', 'React', 'PostgreSQL', 'Redis']
   },
   {
     title: 'connect 4',
     url: 'https://github.com/LoganEStack/connect4',
-    image: require('../assets/images/projects/connect4_narrow.png'),
+    image: require('../assets/images/projects/connect4_wide.png'),
     description: 'A game of connect 4 versus an artificial intelligence using the Minimax algorithm.',
     tags: ['Python', 'Minimax']
   },
   {
     title: 'picture book',
     url: 'https://github.com/LoganEStack/picture_book',
-    image: require('../assets/images/projects/picture_book.png'),
+    image: require('../assets/images/projects/picture_book_wide.png'),
     description: 'A program that adds AI-generated illustrations to books by using topic modeling to determine the central theme of each page.',
     tags: ['Python']
   },
   {
     title: 'cs compendium',
     url: 'https://github.com/LoganEStack/cs_compendium',
-    image: require('../assets/images/projects/cs_compendium.png'),
+    image: require('../assets/images/projects/cs_compendium_wide.png'),
     description: 'An overly-extensive study guide that I wrote for technical interviews.',
     tags: ['Markdown']
   }

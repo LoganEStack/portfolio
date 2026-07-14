@@ -13,21 +13,21 @@ import bill_murray from '../assets/images/art/bill_murray.jpg';
 import bill_murray_small from '../assets/images/art/bill_murray_small.jpg';
 import bird_with_arms from '../assets/images/art/bird_with_arms.jpg';
 import bird_with_arms_small from '../assets/images/art/bird_with_arms_small.jpg';
-import chaplin from '../assets/images/art/charlie_chaplin.png';
-import chaplin_small from '../assets/images/art/charlie_chaplin_small.jpg';
+import chaplin from '../assets/images/art/chaplin.png';
+import chaplin_small from '../assets/images/art/chaplin_small.jpg';
 import dog_tags from '../assets/images/art/dog_tags.png';
 import dog_tags_small from '../assets/images/art/dog_tags_small.jpg';
 import loki from '../assets/images/art/loki.jpg';
 import loki_small from '../assets/images/art/loki_small.jpg';
-import dragonball from '../assets/images/art/dragonball_acrylic.jpg';
+import dragonball from '../assets/images/art/dragonball.jpg';
 import dragonball_small from '../assets/images/art/dragonball_small.jpg';
-import fireball from '../assets/images/art/fireball_logo.jpg';
+import fireball from '../assets/images/art/fireball.jpg';
 import fireball_small from '../assets/images/art/fireball_small.jpg';
 import flower from '../assets/images/art/flower.jpg';
 import flower_small from '../assets/images/art/flower_small.jpg';
-import gorilla from '../assets/images/art/gorilla_stipple.png';
+import gorilla from '../assets/images/art/gorilla.png';
 import gorilla_small from '../assets/images/art/gorilla_small.jpg';
-import nachopus from '../assets/images/art/the_nachopus.jpg';
+import nachopus from '../assets/images/art/nachopus.jpg';
 import nachopus_small from '../assets/images/art/nachopus_small.jpg';
 import six_shooter from '../assets/images/art/six_shooter.png';
 import six_shooter_small from '../assets/images/art/six_shooter_small.jpg';
@@ -37,30 +37,32 @@ import spiderman from '../assets/images/art/spiderman_wolverine.jpg';
 import spiderman_small from '../assets/images/art/spiderman_wolverine_small.jpg';
 import trex from '../assets/images/art/trex_moped.png';
 import trex_small from '../assets/images/art/trex_moped_small.jpg';
-import toys from '../assets/images/art/toys_pastel.jpg';
+import toys from '../assets/images/art/toys.jpg';
 import toys_small from '../assets/images/art/toys_small.jpg';
-import tucan from '../assets/images/art/tucan_beats.jpg';
+import tucan from '../assets/images/art/tucan.jpg';
 import tucan_small from '../assets/images/art/tucan_small.jpg';
-import yoshi from '../assets/images/art/yoshi_acrylic.jpg';
+import yoshi from '../assets/images/art/yoshi.jpg';
 import yoshi_small from '../assets/images/art/yoshi_small.jpg';
 import black_bowl from '../assets/images/art/black_bowl.jpg';
 import black_bowl_small from '../assets/images/art/black_bowl_small.jpg';
-import green_cup from '../assets/images/art/green_cup.jpg';
-import green_cup_small from '../assets/images/art/green_cup_small.jpg';
+import green_mug from '../assets/images/art/green_mug.jpg';
+import green_mug_small from '../assets/images/art/green_mug_small.jpg';
 import orange_bowl from '../assets/images/art/orange_bowl.jpg';
 import orange_bowl_small from '../assets/images/art/orange_bowl_small.jpg';
 import orange_vase from '../assets/images/art/orange_vase.jpg';
 import orange_vase_small from '../assets/images/art/orange_vase_small.jpg';
 import red_bowl from '../assets/images/art/red_bowl.jpg';
 import red_bowl_small from '../assets/images/art/red_bowl_small.jpg';
-import white_cup from '../assets/images/art/white_cup.jpg';
-import white_cup_small from '../assets/images/art/white_cup_small.jpg';
+import white_mug from '../assets/images/art/white_mug.jpg';
+import white_mug_small from '../assets/images/art/white_mug_small.jpg';
 import porto_rico from '../assets/images/art/porto_rico.png';
 import porto_rico_small from '../assets/images/art/porto_rico_small.png';
 import venieros from '../assets/images/art/venieros.png';
 import venieros_small from '../assets/images/art/venieros_small.png';
 import smalls from '../assets/images/art/smalls.png';
 import smalls_small from '../assets/images/art/smalls_small.png';
+import the_strand from '../assets/images/art/the_strand.png';
+import the_strand_small from '../assets/images/art/the_strand_small.png';
 import seagrass from '../assets/images/art/seagrass.png';
 import seagrass_small from '../assets/images/art/seagrass_small.png';
 import pink_mug from '../assets/images/art/pink_mug.jpg';
@@ -93,6 +95,7 @@ const artworks = [
   { title: 'Porto Rico', src: porto_rico, small: porto_rico_small },
   { title: 'Veniero\'s', src: venieros, small: venieros_small },
   { title: 'Smalls', src: smalls, small: smalls_small },
+  { title: 'The Strand', src: the_strand, small: the_strand_small },
   { title: 'Seagrass', src: seagrass, small: seagrass_small },
   { title: 'Dragonball', src: dragonball, small: dragonball_small },
   { title: 'Follow Your Dreams', src: trex, small: trex_small },
@@ -100,11 +103,11 @@ const artworks = [
   { title: 'Tucan Bam', src: tucan, small: tucan_small },
   { title: 'Yoshi', src: yoshi, small: yoshi_small },
   { title: 'Black Bowl', src: black_bowl, small: black_bowl_small },
-  { title: 'Green Mug', src: green_cup, small: green_cup_small },
+  { title: 'Green Mug', src: green_mug, small: green_mug_small },
   { title: 'Orange Bowl', src: orange_bowl, small: orange_bowl_small },
   { title: 'Layered Orange Vase', src: orange_vase, small: orange_vase_small },
   { title: 'Red Bowl', src: red_bowl, small: red_bowl_small },
-  { title: 'White Mug', src: white_cup, small: white_cup_small },
+  { title: 'White Mug', src: white_mug, small: white_mug_small },
   { title: 'Pink Mug', src: pink_mug, small: pink_mug_small },
   { title: 'Shot Glasses', src: shot_glasses, small: shot_glasses_small },
 ];

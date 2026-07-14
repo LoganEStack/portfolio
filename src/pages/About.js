@@ -30,12 +30,12 @@ export default function About() {
 
           <div className="about-editorial">
             <p className="about-lede">
-              Backend engineer based in <span className="accent">New York City</span>, currently exploring what's next.
+              Backend engineer based in New York City, currently looking for new opportunities.
             </p>
             <div className="about-rule"></div>
             <div className="about-copy">
               <p>
-                I'm a software engineer with a passion for creativity.
+                Hi, I'm Logan. I'm a software engineer with a passion for creativity.
                 My goal is to make things look their best and work even better.
                 I love all things imaginative and try to find that spark wherever I can in my work and life.
               </p>
