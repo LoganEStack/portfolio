@@ -27,9 +27,13 @@ export default function About() {
               <div className='line_break'></div>
             </h1>
           </div>
-          <div className='page-body'>
-            <section className="content content_about">
-              <div className='content_subheader' style={{ "paddingBottom": "2rem" }}><h2>Hi, I'm Logan.</h2></div>
+
+          <div className="about-editorial">
+            <p className="about-lede">
+              Backend engineer based in <span className="accent">New York City</span>, currently exploring what's next.
+            </p>
+            <div className="about-rule"></div>
+            <div className="about-copy">
               <p>
                 I'm a software engineer with a passion for creativity.
                 My goal is to make things look their best and work even better.
@@ -46,13 +50,13 @@ export default function About() {
               </p>
               <p>
                 If you think I might be right for an opportunity, or you just want to chat about the
-                best Studio Ghibli film 
+                best Studio Ghibli film
                 (it's <span className='totoro text_link'>
                   <span>T</span><span>o</span><span>t</span><span>o</span><span>r</span><span>o</span>
-                </span>) 
+                </span>)
                 please send me an <a href="mailto:loganestack@gmail.com" target="_blank" rel="noopener noreferrer" className='text_link'>email</a> to say hello!
               </p>
-            </section>
+            </div>
           </div>
           <PageFooter />
         </div>

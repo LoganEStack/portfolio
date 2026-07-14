@@ -1,6 +1,50 @@
+/* Minimal editorial layout */
+.about-editorial {
+    max-width: 560px;
+    width: 85%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 1.5rem 0 3rem;
+}
+
+.about-lede {
+    font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+.about-lede .accent {
+    color: var(--lighter_red);
+    font-style: normal;
+}
+
+.about-rule {
+    width: 2.5rem;
+    height: 1px;
+    background: var(--dark_gray);
+    margin: 0 auto 2rem;
+}
+
+.about-copy p {
+    text-align: left;
+    line-height: 1.75;
+    font-size: 18px;
+    margin: 0 0 1.1rem;
+}
+
+@media (max-width: 487px) {
+    .about-editorial {
+        padding-bottom: 4rem;
+    }
+}
+
 .totoro:hover {
     cursor: url("/src/assets/images/svg/totoro.svg"), auto;
-
 }
 
 .totoro {

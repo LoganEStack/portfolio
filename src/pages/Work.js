@@ -3,6 +3,45 @@ import Container from 'react-bootstrap/Container';
 import BackArrow from '../components/BackArrow'
 import PageFooter from '../components/PageFooter'
 
+const jobs = [
+  {
+    role: 'Senior Software Engineer',
+    company: 'Justworks',
+    url: 'https://www.justworks.com/',
+    dates: '2025 – 2026',
+    current: true,
+    description: "Backend development for the Company Onboarding team, helping businesses register for Justworks' products and services."
+  },
+  {
+    role: 'Software Engineer',
+    company: 'General Motors',
+    url: 'https://www.gm.com/',
+    dates: '2022 – 2025',
+    description: 'Developed software to evaluate supplier hardware components for vehicle cameras.'
+  },
+  {
+    role: 'DevOps Engineer',
+    company: 'General Motors',
+    url: 'https://www.gm.com/',
+    dates: '2019 – 2022',
+    description: "Developed the release portion of the CI/CD pipeline for all Electronic Control Units in GM's Vehicle Motion and Embedded Controls division."
+  },
+  {
+    role: 'Software Engineer Intern',
+    company: 'Michelin',
+    url: 'https://www.michelin.com/',
+    dates: '2018',
+    description: 'Created applications in Python and Groovy to support other sub-departments within IT.'
+  },
+  {
+    role: 'Software Engineer Intern',
+    company: 'IEEE',
+    url: 'https://www.ieee.org/',
+    dates: '2017',
+    description: 'Built and maintained an internal IT Portal for department news and articles using WordPress.'
+  }
+];
+
 export default function Work() {
   return (
     <motion.div
@@ -23,57 +62,24 @@ export default function Work() {
           </div>
 
           <div className='page-body'>
-            <section className="content">
-              <motion.div whileHover={{ scale: 1.05 }}>
-                <a href="https://www.justworks.com/" target="_blank" rel="noopener noreferrer">
-                  <div className='job'>
-                    <div className='content_subheader'><h2>Justworks</h2></div>
-                    <div className='content_subtext'>Senior Software Engineer (2025-2026)</div>
-                    <p style={{ 'paddingBottom': '0' }}>
-                      Backend development for the Company Onboarding team, helping businesses register for Justworks products and services.
-                    </p>
-                  </div>
-                </a>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }}>
-                <a href="https://www.gm.com/" target="_blank" rel="noopener noreferrer">
-                  <div className='job'>
-                    <div className='content_subheader'><h2>General Motors</h2></div>
-                    <div className='content_subtext'>Software Engineer (2022-2025)</div>
-                    <p style={{ 'paddingBottom': '0' }}>
-                      Developed software to evaluate supplier hardware components for vehicle cameras.
-                    </p>
-                    <div className='content_subtext' style={{ "paddingTop": "1rem" }}>DevOps Engineer (2019-2022)</div>
-                    <p>
-                      Developed the release portion of the CI/CD pipeline for all Electronic Control Units
-                      in GM's Vehicle Motion and Embedded Controls division.
-                    </p>
-                  </div>
-                </a>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }}>
-                <a href="https://www.michelin.com/" target="_blank" rel="noopener noreferrer">
-                  <div className='job'>
-                    <div className='content_subheader'><h2>Michelin</h2></div>
-                    <div className='content_subtext'>Software Engineer Intern (2018)</div>
-                    <p>
-                      Created applications in Python and Groovy to support other sub-departments within IT.
-                    </p>
-                  </div>
-                </a>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }}>
-                <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">
-                  <div className='job'>
-                    <div className='content_subheader'><h2>IEEE</h2></div>
-                    <div className='content_subtext'>Software Engineer Intern (2017)</div>
-                    <p>
-                      Built and maintained an internal IT Portal for department news and articles using WordPress.
-                    </p>
-                  </div>
-                </a>
-              </motion.div>
-            </section>
+            <div className="timeline">
+              {jobs.map((job) => (
+                <motion.a
+                  key={`${job.company}-${job.role}`}
+                  className={`tl-item${job.current ? ' current' : ''}`}
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ x: 6 }}
+                >
+                  <div className="tl-dot"></div>
+                  <div className="tl-role">{job.role}</div>
+                  <div className="tl-company">{job.company}</div>
+                  <div className="tl-dates">{job.dates}</div>
+                  <p>{job.description}</p>
+                </motion.a>
+              ))}
+            </div>
           </div>
           <PageFooter />
         </div>

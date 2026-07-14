@@ -1,9 +1,46 @@
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
 import PageFooter from '../components/PageFooter'
+
+const featured = {
+  title: 'stream stack',
+  url: 'https://github.com/LoganEStack/streamstack',
+  image: require('../assets/images/projects/streamstack.png'),
+  description: 'A full upload-to-playback video streaming platform: FastAPI backend, FFmpeg transcoding into adaptive-bitrate HLS, and a React frontend with real-time upload and rendition tracking.',
+  tags: ['FastAPI', 'React', 'SQLModel', 'SQLite', 'FFmpeg', 'HLS / ABR']
+};
+
+const projects = [
+  {
+    title: 'short stack',
+    url: 'https://github.com/LoganEStack/shortstack',
+    image: require('../assets/images/projects/shortstack.png'),
+    description: 'A URL shortener serving as an example of standards and practices for APIs, databases, deployment, etc.',
+    tags: ['Flask', 'React', 'PostgreSQL', 'Redis']
+  },
+  {
+    title: 'connect 4',
+    url: 'https://github.com/LoganEStack/connect4',
+    image: require('../assets/images/projects/connect4_narrow.png'),
+    description: 'A game of connect 4 versus an artificial intelligence using the Minimax algorithm.',
+    tags: ['Python', 'Minimax']
+  },
+  {
+    title: 'picture book',
+    url: 'https://github.com/LoganEStack/picture_book',
+    image: require('../assets/images/projects/picture_book.png'),
+    description: 'A program that adds AI-generated illustrations to books by using topic modeling to determine the central theme of each page.',
+    tags: ['Python']
+  },
+  {
+    title: 'cs compendium',
+    url: 'https://github.com/LoganEStack/cs_compendium',
+    image: require('../assets/images/projects/cs_compendium.png'),
+    description: 'An overly-extensive study guide that I wrote for technical interviews.',
+    tags: ['Markdown']
+  }
+];
 
 export default function Projects() {
   return (
@@ -26,81 +63,49 @@ export default function Projects() {
 
           <div className='page-body'>
             <section className="content_project">
-              <Row>
-                <Col md={6}>
-                  <motion.div whileHover={{ scale: 1.05 }}>
-                    <a href="https://github.com/LoganEStack/shortstack" target="_blank" rel="noopener noreferrer">
-                      <div className="project">
-                        <div className='content_subheader'><h2>short stack</h2></div>
-                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/shortstack.png")} alt="short stack" width="500" height="auto" />
-                        <p>
-                          A URL shortener that I made to better educate myself on standards and practices
-                          for APIs, databases, deployment, etc.
-                        </p>
-                      </div>
-                    </a>
-                  </motion.div>
-                </Col>
+              <motion.a
+                className="proj-featured"
+                href={featured.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+              >
+                <img className="proj-featured-image" loading="lazy" src={featured.image} alt={featured.title} width="500" height="auto" />
+                <div className="proj-featured-body">
+                  <div className="proj-eyebrow">Featured</div>
+                  <h2>{featured.title}</h2>
+                  <p>{featured.description}</p>
+                  <div className="tag-row">
+                    {featured.tags.map((tag) => (
+                      <span className="tag" key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </motion.a>
 
-                <Col md={6}>
-                  <motion.div whileHover={{ scale: 1.05 }}>
-                    <a href="https://github.com/LoganEStack/streamstack" target="_blank" rel="noopener noreferrer">
-                      <div className="project">
-                        <div className='content_subheader'><h2>stream stack</h2></div>
-                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/streamstack.png")} alt="cs compendium" width="500" height="auto" />
-                        <p>
-                          A video transcoding and streaming platform that converts uploaded videos into adaptive-bitrate HLS.
-                        </p>
+              <div className="proj-grid">
+                {projects.map((project) => (
+                  <motion.a
+                    className="proj-card"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={project.title}
+                    whileHover={{ y: -4 }}
+                  >
+                    <img className="proj-card-image" loading="lazy" src={project.image} alt={project.title} width="500" height="auto" />
+                    <div className="proj-card-body">
+                      <h3>{project.title}</h3>
+                      <p>{project.description}</p>
+                      <div className="tag-row tag-row-sm">
+                        {project.tags.map((tag) => (
+                          <span className="tag" key={tag}>{tag}</span>
+                        ))}
                       </div>
-                    </a>
-                  </motion.div>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={6}>
-                  <motion.div whileHover={{ scale: 1.05 }}>
-                    <a href="https://github.com/LoganEStack/connect4" target="_blank" rel="noopener noreferrer">
-                      <div className="project">
-                        <div className='content_subheader'><h2>connect 4</h2></div>
-                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/connect4.png")} alt="connect 4" width="500" height="auto" />
-                        <p>
-                          A game of connect 4 versus an artificial intelligence using the Minimax algorithm.
-                        </p>
-                      </div>
-                    </a>
-                  </motion.div>
-                </Col>
-
-                <Col md={6}>
-                  <motion.div whileHover={{ scale: 1.05 }}>
-                    <a href="https://github.com/LoganEStack/picture_book" target="_blank" rel="noopener noreferrer">
-                      <div className="project">
-                        <div className='content_subheader'><h2>picture book</h2></div>
-                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/picture_book.png")} alt="picture_book" width="500" height="auto" />
-                        <p>
-                          A program that adds AI generated illustrations to books by using
-                          topic modeling to determine the central theme of each page.
-                        </p>
-                      </div>
-                    </a>
-                  </motion.div>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={6}>
-                  <motion.div whileHover={{ scale: 1.05 }}>
-                    <a href="https://github.com/LoganEStack/cs_compendium" target="_blank" rel="noopener noreferrer">
-                      <div className="project">
-                        <div className='content_subheader'><h2>cs compendium</h2></div>
-                        <img className='project_image' loading="lazy" src={require("../assets/images/projects/cs_compendium.png")} alt="cs compendium" width="500" height="auto" />
-                        <p>
-                          An overly-extensive study guide that I wrote for practicing technical interviews.
-                        </p>
-                      </div>
-                    </a>
-                  </motion.div>
-                </Col>
-              </Row>
+                    </div>
+                  </motion.a>
+                ))}
+              </div>
             </section>
           </div>
           <PageFooter />

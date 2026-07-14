@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion'
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import BackArrow from '../components/BackArrow'
 import Artwork from '../components/Artwork'
 import PageFooter from '../components/PageFooter'
@@ -15,33 +13,35 @@ import bill_murray from '../assets/images/art/bill_murray.jpg';
 import bill_murray_small from '../assets/images/art/bill_murray_small.jpg';
 import bird_with_arms from '../assets/images/art/bird_with_arms.jpg';
 import bird_with_arms_small from '../assets/images/art/bird_with_arms_small.jpg';
-import chaplin from '../assets/images/art/chaplin.png';
-import chaplin_small from '../assets/images/art/chaplin_small.jpg';
+import chaplin from '../assets/images/art/charlie_chaplin.png';
+import chaplin_small from '../assets/images/art/charlie_chaplin_small.jpg';
 import dog_tags from '../assets/images/art/dog_tags.png';
 import dog_tags_small from '../assets/images/art/dog_tags_small.jpg';
-import dog from '../assets/images/art/dog.jpg';
-import dog_small from '../assets/images/art/dog_small.jpg';
-import dragonball from '../assets/images/art/dragonball.jpg';
+import loki from '../assets/images/art/loki.jpg';
+import loki_small from '../assets/images/art/loki_small.jpg';
+import dragonball from '../assets/images/art/dragonball_acrylic.jpg';
 import dragonball_small from '../assets/images/art/dragonball_small.jpg';
-import fireball from '../assets/images/art/fireball.jpg';
+import fireball from '../assets/images/art/fireball_logo.jpg';
 import fireball_small from '../assets/images/art/fireball_small.jpg';
 import flower from '../assets/images/art/flower.jpg';
 import flower_small from '../assets/images/art/flower_small.jpg';
-import gorilla from '../assets/images/art/gorilla.png';
+import gorilla from '../assets/images/art/gorilla_stipple.png';
 import gorilla_small from '../assets/images/art/gorilla_small.jpg';
-import nachopus from '../assets/images/art/nachopus.jpg';
+import nachopus from '../assets/images/art/the_nachopus.jpg';
 import nachopus_small from '../assets/images/art/nachopus_small.jpg';
 import six_shooter from '../assets/images/art/six_shooter.png';
 import six_shooter_small from '../assets/images/art/six_shooter_small.jpg';
+import space_ollie from '../assets/images/art/space_ollie.png';
+import space_ollie_small from '../assets/images/art/space_ollie_small.png';
 import spiderman from '../assets/images/art/spiderman_wolverine.jpg';
 import spiderman_small from '../assets/images/art/spiderman_wolverine_small.jpg';
 import trex from '../assets/images/art/trex_moped.png';
 import trex_small from '../assets/images/art/trex_moped_small.jpg';
-import toys from '../assets/images/art/toys.jpg';
+import toys from '../assets/images/art/toys_pastel.jpg';
 import toys_small from '../assets/images/art/toys_small.jpg';
-import tucan from '../assets/images/art/tucan.jpg';
+import tucan from '../assets/images/art/tucan_beats.jpg';
 import tucan_small from '../assets/images/art/tucan_small.jpg';
-import yoshi from '../assets/images/art/yoshi.jpg';
+import yoshi from '../assets/images/art/yoshi_acrylic.jpg';
 import yoshi_small from '../assets/images/art/yoshi_small.jpg';
 import black_bowl from '../assets/images/art/black_bowl.jpg';
 import black_bowl_small from '../assets/images/art/black_bowl_small.jpg';
@@ -55,6 +55,59 @@ import red_bowl from '../assets/images/art/red_bowl.jpg';
 import red_bowl_small from '../assets/images/art/red_bowl_small.jpg';
 import white_cup from '../assets/images/art/white_cup.jpg';
 import white_cup_small from '../assets/images/art/white_cup_small.jpg';
+import porto_rico from '../assets/images/art/porto_rico.png';
+import porto_rico_small from '../assets/images/art/porto_rico_small.png';
+import venieros from '../assets/images/art/venieros.png';
+import venieros_small from '../assets/images/art/venieros_small.png';
+import smalls from '../assets/images/art/smalls.png';
+import smalls_small from '../assets/images/art/smalls_small.png';
+import seagrass from '../assets/images/art/seagrass.png';
+import seagrass_small from '../assets/images/art/seagrass_small.png';
+import pink_mug from '../assets/images/art/pink_mug.jpg';
+import pink_mug_small from '../assets/images/art/pink_mug_small.png';
+import shot_glasses from '../assets/images/art/shot_glasses.jpg';
+import shot_glasses_small from '../assets/images/art/shot_glasses_small.png';
+import large_abstract from '../assets/images/art/large_abstract.png';
+import large_abstract_small from '../assets/images/art/large_abstract_small.png';
+import hobbit_hole from '../assets/images/art/hobbit_hole.png';
+import hobbit_hole_small from '../assets/images/art/hobbit_hole_small.png';
+
+
+const artworks = [
+  { title: 'Hobbit Hole', src: hobbit_hole, small: hobbit_hole_small },
+  { title: 'Bill Murray - Abstract', src: bill_murray, small: bill_murray_small },
+  { title: 'A Cup of Tea', src: bird_with_arms, small: bird_with_arms_small },
+  { title: 'Two Piece Abstract', src: two_piece_abstract, small: two_piece_abstract_small },
+  { title: 'Three Piece Abstract', src: three_piece_abstract, small: three_piece_abstract_small },
+  { title: 'Chaplin', src: chaplin, small: chaplin_small },
+  { title: 'Dog Tags', src: dog_tags, small: dog_tags_small },
+  { title: 'Loki', src: loki, small: loki_small },
+  { title: 'Spiderman & Wolverine', src: spiderman, small: spiderman_small },
+  { title: 'Fireball on Wood', src: fireball, small: fireball_small },
+  { title: 'Flower - Watercolor', src: flower, small: flower_small },
+  { title: 'Ape', src: gorilla, small: gorilla_small },
+  { title: 'Space Ollie', src: space_ollie, small: space_ollie_small },
+  { title: 'Nachopus', src: nachopus, small: nachopus_small },
+  { title: 'Six Shooter', src: six_shooter, small: six_shooter_small },
+  { title: 'Abstract', src: large_abstract, small: large_abstract_small },
+  { title: 'Porto Rico', src: porto_rico, small: porto_rico_small },
+  { title: 'Veniero\'s', src: venieros, small: venieros_small },
+  { title: 'Smalls', src: smalls, small: smalls_small },
+  { title: 'Seagrass', src: seagrass, small: seagrass_small },
+  { title: 'Dragonball', src: dragonball, small: dragonball_small },
+  { title: 'Follow Your Dreams', src: trex, small: trex_small },
+  { title: 'Toys', src: toys, small: toys_small },
+  { title: 'Tucan Bam', src: tucan, small: tucan_small },
+  { title: 'Yoshi', src: yoshi, small: yoshi_small },
+  { title: 'Black Bowl', src: black_bowl, small: black_bowl_small },
+  { title: 'Green Mug', src: green_cup, small: green_cup_small },
+  { title: 'Orange Bowl', src: orange_bowl, small: orange_bowl_small },
+  { title: 'Layered Orange Vase', src: orange_vase, small: orange_vase_small },
+  { title: 'Red Bowl', src: red_bowl, small: red_bowl_small },
+  { title: 'White Mug', src: white_cup, small: white_cup_small },
+  { title: 'Pink Mug', src: pink_mug, small: pink_mug_small },
+  { title: 'Shot Glasses', src: shot_glasses, small: shot_glasses_small },
+];
 
 export default function Art() {
   const [popupImage, setPopupImage] = useState(null);
@@ -85,115 +138,30 @@ export default function Art() {
             <section className="content">
               <p>
                 Creativity is a big part of my life. I love to excercise my skills through a variety of
-                mediums: predominantly pottery, arcylic, and pen & ink. 
+                mediums: predominantly pottery, arcylic, and pen & ink.
               </p>
               <p>
-                This is a catalog of many of my pieces over the past few years. It ranges broadly in terms 
+                This is a catalog of many of my pieces over the past few years. It ranges broadly in terms
                 of both subject and quality. I tend to just paint whatever I think might make my friends happy.
               </p>
               <p>
-                A lot of the works in here are directly inspired by or recreations of existing works, as 
-                requested by friends. I don't claim any form of authorship of those pieces.
+                A lot of the works in here are directly inspired by or recreations of existing works, as
+                requested by friends. I don't claim any form of ownership over those pieces.
               </p>
             </section>
-            <Row className='art_section'>
-              <Row>
-                <Col>
-                  <Artwork src={bill_murray} src_small={bill_murray_small} alt="Bill Murray art" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={bird_with_arms} src_small={bird_with_arms_small} alt="bird with arms art" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={two_piece_abstract} src_small={two_piece_abstract_small} alt="two piece abstract art" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={three_piece_abstract} src_small={three_piece_abstract_small} alt="three piece abstract art" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={chaplin} src_small={chaplin_small} alt="Chaplin art" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={dog_tags} src_small={dog_tags_small} alt="dog_tags drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={dog} src_small={dog_small} alt="dog drawing" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={dragonball} src_small={dragonball_small} alt="dragonball drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={fireball} src_small={fireball_small} alt="fireball drawing" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={flower} src_small={flower_small} alt="flower drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={gorilla} src_small={gorilla_small} alt="gorilla drawing" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={nachopus} src_small={nachopus_small} alt="nachopus drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={six_shooter} src_small={six_shooter_small} alt="six_shooter drawing" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={spiderman} src_small={spiderman_small} alt="spiderman drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={trex} src_small={trex_small} alt="trex drawing" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={toys} src_small={toys_small} alt="toys drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={tucan} src_small={tucan_small} alt="tucan drawing" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={yoshi} src_small={yoshi_small} alt="yoshi drawing" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={black_bowl} src_small={black_bowl_small} alt="black bowl" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={orange_bowl} src_small={orange_bowl_small} alt="orange bowl" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={green_cup} src_small={green_cup_small} alt="green cup" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={white_cup} src_small={white_cup_small} alt="white cup" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Artwork src={red_bowl} src_small={red_bowl_small} alt="red bowl" openPopup={setPopupImage} />
-                </Col>
-                <Col>
-                  <Artwork src={orange_vase} src_small={orange_vase_small} alt="orange vase" openPopup={setPopupImage} />
-                </Col>
-              </Row>
-            </Row>
+
+            <div className="art-masonry">
+              {artworks.map((art) => (
+                <Artwork
+                  key={art.title}
+                  title={art.title}
+                  src={art.src}
+                  src_small={art.small}
+                  alt={`${art.title} art`}
+                  openPopup={setPopupImage}
+                />
+              ))}
+            </div>
           </div>
           <PageFooter />
         </div>
